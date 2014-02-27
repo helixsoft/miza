@@ -70,21 +70,28 @@
         <section class="parallax-section parallax-background" id="parallax-slider">
 			<div class="slidewrap2" data-autorotate="5000">
 				<ul class="labslider">
+                    <?php 
+                        $args = array( 
+                            'post_type' => 'labs', 
+                            'posts_per_page' => -1,
+                            'post_status'=>'publish',
+                            'meta_query' => array(
+                                        array(
+                                            'key' => 'slider',
+                                            'value' => '1',
+                                            'compare' => '=='
+                                        ),
+                                    ), 
+                        );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post();
+                    ?>
 					<li class="labslide">	
-						<img src="http://dummyimage.com/1920x648/000/fff">
+						<img src="<?php echo get_field('cover_image')?>">
 					</li>
-					<li class="labslide">	
-						<img src="http://dummyimage.com/1920x648/000/fff">
-					</li>
-					<li class="labslide">	
-						<img src="http://dummyimage.com/1920x648/000/fff">
-					</li>
-					<li class="labslide">	
-						<img src="http://dummyimage.com/1920x648/000/fff">
-					</li>
-					<li class="labslide">	
-						<img src="http://dummyimage.com/1920x648/000/fff">
-					</li>
+                    <?php 
+                        endwhile;
+                    ?>
 				</ul>
 			</div>
 			<div class="grid-container">
