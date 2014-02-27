@@ -65,7 +65,7 @@ get_header('lab'); ?>
 					</div>
 					<div class="grid-45 tablet-grid-100 mobile-grid-100 about-box grid-parent lab-grid-hire" >
 						
-						<a href="#" class="rev-button">Hire Us</a>
+						<a href="<?php echo site_url('#address-section')?>" class="rev-button">Hire Us</a>
 					</div>
 				</div>
 			</div>

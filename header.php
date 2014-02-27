@@ -52,7 +52,7 @@
                         <nav id="ut-navigation" class="grid-80 tablet-grid-80 hide-on-mobile">
                             <a id="sev-nav1" href="#service">Services</a>
                             <a href="<?php echo site_url('/lab/')?>">LAB</a>
-                            <a href="#">Blog</a>
+                            <a href="<?php echo site_url('/blog/')?>">Blog</a>
                             <a id="hire1" href="#address-section">Hire Us</a>
                             <a href="#" class="icon"></a>
                         </nav>
@@ -82,7 +82,7 @@
                             <div class="nav">
                                 <a id="sev-nav2" href="#service">Services</a>
                                 <a href="<?php echo site_url('/lab/')?>">LAB</a>
-                                <a href="#">Blog</a>
+                                <a href="<?php echo site_url('/blog/')?>">Blog</a>
                                 <a id="hire2" href="#address-section">Hire Us</a>
                             </div>
                         </div>

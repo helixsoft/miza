@@ -4,10 +4,18 @@
 							<div class="black-arrow-up"></div>
                               <div class="grid-292 tablet-grid-100 mobile-grid-100 about-box grid-parent" >
                                     <nav>
-                                          <li><a href="#">Services</a></li>
-                                          <li><a href="#">LAB</a></li>
-                                          <li><a href="#">Blog</a></li>
-                                          <li><a href="#">Hire US</a></li>
+                                          <?php if ( is_page('home') ) {?>
+                                          <li><a id="sev-nav3" href="#service">Services</a></li>
+                                          <?php } else { ?>
+                                          <li><a href="<?php echo site_url('#service')?>">Services</a></li>
+                                          <?php } ?>
+                                          <li><a href="<?php echo site_url('/lab/')?>">LAB</a></li>
+                                          <li><a href="<?php echo site_url('/blog/')?>">Blog</a></li>
+                                          <?php if ( is_page('home') ) {?>
+                                          <li><a id="hire3" href="#address-section">Hire US</a></li>
+                                          <?php } else { ?>
+                                          <li><a href="<?php echo site_url('#address-section')?>">Hire US</a></li>
+                                          <?php } ?>
                                     </nav>
                               </div>
                               <div class="grid-320 tablet-grid-100 mobile-grid-100  about-box grid-parent" >
@@ -36,6 +44,31 @@
 <script src="<?php echo THEMEROOT?>/js/plugin.js"></script>
 <script src="<?php echo THEMEROOT?>/js/jquery.mixitup.min.js"></script>
 <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true&language=en"></script>
+<script type="text/javascript">
+      <?php
+if ( is_page('home') ) {?>
+    jQuery(document).ready(function(){
+            $('.logo a[href*=#]').click( function(event) { 
+                        
+                  event.preventDefault();
+                  $('#ut-navigation a').removeClass('selected');
+                  $('#ut-navigation a:first-child').addClass('selected');
+                  $.scrollTo( $(this).attr('href') , 650, { easing: 'swing' , offset: -80 , 'axis':'y' } );             
+                  
+            });
+            
+            $('#sev-nav3,#sev-nav2,#sev-nav1,#hire1,#hire2,#hire3').click( function(event) { 
+                        
+                  event.preventDefault();
+                  $.scrollTo( $(this).attr('href') ,2000, { easing: 'swing' , offset: 1 , 'axis':'y' } );               
+                  
+            });
+      });
+<?php } else { ?>
+    // This is not a homepage
+<?php } ?>
+      
+</script>
 <script type="text/javascript">
 jQuery(document).ready(function(){
       var slider=new Array();

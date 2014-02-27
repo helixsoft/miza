@@ -1,3 +1,6 @@
+var hash=window.location.hash;
+window.location.hash='';
+history.pushState('', document.title, window.location.pathname);
 (function($){
 	
 	"use strict";
@@ -18,13 +21,14 @@
 			$('.hero').height( windowHeight );
 			$('.parallax-banner-2').height('538')
 		});
-		if(window.location.hash=='#top'){
+		if(hash=='#top'){
+			
 			$.scrollTo( '#top' ,650, { easing: 'swing' , offset: 1 , 'axis':'y' } );	
 		}
-		if(window.location.hash=='#service'){
+		if(hash=='#service'){
 			$.scrollTo( '#service' ,2000, { easing: 'swing' , offset: 1 , 'axis':'y' } );	
 		}	
-		if(window.location.hash=='#address-section'){
+		if(hash=='#address-section'){
 			$.scrollTo( '#address-section' ,2000, { easing: 'swing' , offset: 1 , 'axis':'y' } );	
 		}
 		$('.address-box .contact').on("click",function(){
@@ -200,22 +204,7 @@
 		}
 		/* Scroll to Main
 		================================================== */
-		$('.logo a[href*=#]').click( function(event) { 
-				
-			event.preventDefault();
-			$('#ut-navigation a').removeClass('selected');
-			$('#ut-navigation a:first-child').addClass('selected');
-			
-			$.scrollTo( $(this).attr('href') , 650, { easing: 'swing' , offset: -80 , 'axis':'y' } );			
-			
-		});
 		
-		$('#sev-nav2,#sev-nav1,#hire1,#hire2').click( function(event) { 
-				
-			event.preventDefault();
-			$.scrollTo( $(this).attr('href') ,2000, { easing: 'swing' , offset: 1 , 'axis':'y' } );			
-			
-		});
 		$('.one').hover(function(){
 			$('.one').children('.border').hide();
 		}, function() {
