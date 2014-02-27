@@ -73,4 +73,9 @@ get_header('lab'); ?>
 	</section>
 				
 </div>
+<script type='text/javascript'>
+                    /* <![CDATA[ */
+                    var fangohr_dynload = {"postType":"post","startPage":"1","maxPages":"<?php echo $wp_query->max_num_pages;;?>","nextLink":"<?php echo get_vogaye_next_link(get_next_posts_link( ''));?>","startPostPage":"1","nextPostPageLink":"<?php echo $first_post?>"};
+                    /* ]]> */
+                    </script>
 <?php get_footer();?>

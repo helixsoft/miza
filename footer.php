@@ -70,6 +70,13 @@ if ( is_page('home') ) {?>
       
 </script>
 <script type="text/javascript">
+      <?php if ( 'labs' == get_post_type() ) {?>
+            jQuery(document).ready(function(){
+                  $('.parallax-banner-2').css("background-position","center center");
+            });
+      <?php } ?>
+</script>
+<script type="text/javascript">
 jQuery(document).ready(function(){
       var slider=new Array();
             slider[0]="<li class=\"slide current\"><img src=\"<?php echo IMAGES?>/1.png\"></li>";

@@ -7,7 +7,7 @@
 get_header('lab-single');?>
 <?php while ( have_posts() ) : the_post();?>
 <style>
-	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID),'full' ); ?>
+	<?php $url = get_field('cover_image') ?>
 	.parallax-banner-2 { background:url(<?php echo $url;?>); background-position: center center; }
 </style>
 <section id="parallax-section-2" class="hero parallax-section parallax-background parallax-section-2" >
@@ -48,4 +48,9 @@ get_header('lab-single');?>
 				</section>
 		</div>
 		<?php endwhile; ?>
+		<script type='text/javascript'>
+                    /* <![CDATA[ */
+                    var fangohr_dynload = {"postType":"post","startPage":"1","maxPages":"<?php echo $wp_query->max_num_pages;;?>","nextLink":"<?php echo get_vogaye_next_link(get_next_posts_link( ''));?>","startPostPage":"1","nextPostPageLink":"<?php echo $first_post?>"};
+                    /* ]]> */
+                    </script>
 <?php get_footer();?>

@@ -13,7 +13,7 @@ history.pushState('', document.title, window.location.pathname);
 		
 		$('.hero').height( windowHeight );
 		$('#parallax-section-2').addClass('parallax-banner-2');
-		$('.parallax-banner-2').css("background-position","0px 0px")
+		$('.parallax-banner-2').css("background-position","0px 0px");
 		$('.parallax-banner-2').height('538');
 		$(window).resize(function() {
 			
