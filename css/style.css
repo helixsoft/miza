@@ -1,0 +1,713 @@
+html {
+	height:100%;
+}
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	background: #FFFFFF;
+	font: 15px/23px "nexa_lightregular";
+	color: #8F989F;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+.wrap {
+	position:relative;
+	z-index:500;
+}
+.content-section {
+	padding-top:150px;
+	padding-bottom:130px;
+	background:#f3f3f3;
+}
+
+/* #Typography
+================================================== */
+
+h1, h2 { color: #333333; font-family: 'nexa_lightregular'; font-weight: normal; line-height:100%; margin-bottom:20px; margin-top:0; text-rendering: optimizelegibility; }
+h3, h4, h5, h6 { color: #333333; font-family: 'nexa_lightregular'; font-weight: normal; line-height:100%; margin-bottom:20px; margin-top:0; text-rendering: optimizelegibility; }
+h1 { font-size:30px; }
+h2 { font-size:26px; }
+h3 { font-size:20px; }
+h4 { font-size:16px; }
+h5 { font-size:14px; }
+h6 { font-size:12px; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+p { margin: 0 0 20px 0; }
+p img { margin: 0; }
+p.lead { font-size: 21px; line-height: 27px; color: #77777;  }
+em { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+
+/*	Blockquotes  */
+
+blockquote, blockquote p { font-size: 17px; line-height: 24px; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #DDDDDD; }
+blockquote cite { display: block; font-size: 12px; color: #999999; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a { color: #999999; }
+
+hr { border: solid #DDDDDD; border-width: 1px 0 0; clear: both; margin: 20px 0 40px; height: 0; }
+
+/* #Links
+================================================== */
+
+a { 
+	text-decoration: none; 
+	outline: 0;
+	-webkit-transform: translateZ(0);
+	-webkit-transition:0.2s color linear;
+		-moz-transition:0.2s color linear;
+			transition:0.2s color linear;
+}
+a:hover { color: #555555; }
+
+/* #Lists
+================================================== */
+
+ul, ol { margin-bottom: 20px; }
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin-left: 30px; }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 0 }
+
+/* #Images
+================================================== */
+
+img {
+	max-width: 100%;
+	height: auto; 
+}
+@media \0screen {
+  img { 
+  	width: auto; /* for ie 8 */
+  }
+}
+
+/* #Header Section
+================================================== */
+
+#header-section {
+	line-height:80px;
+}
+.ha-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	width:100%;
+	padding: 0;
+	z-index: 1000;
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	background:rgb(255, 255, 255);
+}
+.ha-header-perspective {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	-webkit-perspective: 1100px;
+	-moz-perspective: 1100px;
+	perspective: 1100px;
+	-webkit-perspective-origin: 50% 0;
+	-moz-perspective-origin: 50% 0;
+	perspective-origin: 50% 0;
+}
+.ha-header-perspective > div {
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	overflow: hidden;
+}
+.ha-header-front {
+	z-index: 2;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+.logo {
+	text-align:left;
+	margin:0;
+	line-height:80px;
+	color:#1d1d1d;
+	text-transform:uppercase;
+}
+.logo img {
+	max-height:55px;
+	vertical-align:middle;
+}
+.ha-header nav {
+	height: 100%;
+	text-align:right;
+	font-family: 'ralewaymedium', Helvetica, Arial, sans-serif;
+}
+.ha-header nav a {
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size:12px;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    text-decoration: none;
+	padding-left:30px;
+	position:relative;
+}
+.ha-header nav a.icon{
+	height: 10px;
+	background: url(../images/nav-b.png) center center no-repeat;
+}
+.ha-header nav a.selected{
+	color: #777777 !important;
+}
+.ha-header nav a:hover{
+	color: #777777;
+}
+.ha-header-small {
+	height: 80px;
+}
+.ha-header-hide {
+	height: 80px;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.ha-header-show {
+	height: 80px;
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	transform: translateY(0%);
+}
+.section-header {
+	text-align:center;
+	padding-bottom:50px;
+}
+.section-title {
+	font-size:40px;
+	margin-bottom:20px;
+	background-attachment: scroll;
+	background-image: url('../images/divider1.png');
+	background-repeat: repeat-x;
+	background-position: center center;
+	text-transform:uppercase;
+}
+.section-title span {
+	background:#FFFFFF;
+	padding:0 35px;
+}
+.section-slogan {
+	font-size:20px;
+	line-height:140%;
+}
+.js .section-title,
+.js .section-slogan {
+	opacity:0;
+}
+
+/* #Hero Section
+================================================== */
+
+.hero {
+	height:100%;
+	min-height:100%;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+	z-index:750;
+}
+.hero .hero-holder {
+	display:inline-block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	width:820px;
+	max-width:100%;
+}
+.js .hero .hero-holder {
+	opacity:0;
+}
+.hero-title-holder {
+	background-attachment: scroll;
+	background-repeat: repeat-x;
+	background-position: top center;
+	display:inline-block;
+	border-top:1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0 40px;
+}
+.hero-title {
+	font-size:4em;
+	margin-bottom:20px;
+	text-transform:capitalize;
+	text-align:center;
+	display:inline-block;
+	color:#FFFFFF;
+	padding-top:20px;
+}
+.main-logo{
+	display: inline-block;
+	float: left;
+	margin-bottom: 20px;
+}
+.hero-inner .nav{
+	display: inline-block;
+	float: right;
+	margin-top: 112px;
+}
+.hero-inner .nav a{
+	color: #fff;
+	margin-right: 10px;
+}
+.hero-inner .nav a:before {
+	content:'.';
+	font-size:30px;
+	position:relative;
+	top:-3px;
+	color:#fff;
+	font-weight:bold;
+	left:-6px;
+}
+.hero-inner .nav a:first-child:before {
+    display: none;
+}
+.btn-holder {
+	display:block;
+}
+.hero-btn {
+	background:transparent url('../images/downarraow.png') no-repeat center center;
+	color:#FFFFFF;
+	margin-top: 40px;
+	padding:10px 15px;
+	font-size:12px;
+	cursor:pointer;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	text-align:center;
+	display:inline-block;
+	text-rendering: optimizelegibility;
+	-webkit-transition:0.2s margin-top linear;
+		-moz-transition:0.2s margin-top linear;
+			transition:0.2s margin-top linear;
+			width: 87px;
+			height: 38px;
+}
+.hero-btn:hover {
+	margin-top:50px;
+}
+.hero-poster-image {
+	background:url('../images/parallax-banner-1.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	z-index:0 !important;
+	backface-visibility:hidden;
+	background-position:center center;
+}
+
+
+
+
+/* #Parallax
+================================================== */
+
+.parallax-section {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+.parallax-header {
+	position:relative;
+	text-align:center;
+}
+.parallax-title {
+	font-size:40px;
+	margin-bottom:20px;
+	color:#FFFFFF;
+	background-attachment: scroll;
+	background-image: url('../images/divider1.png');
+	background-repeat: repeat-x;
+	background-position: top center;
+	padding-top:20px;
+	display:inline-block;
+	text-transform:uppercase;
+	position:relative;
+	z-index:10;
+}
+.parallax-title span {
+}
+.parallax-slogan {
+	font-size:20px;
+	line-height:140%;
+	margin:0;
+	z-index:10;
+	position:relative;
+}
+.js .parallax-title,
+.js .parallax-slogan {
+	opacity:0;
+}
+.parallax-content {
+	color:#FFFFFF;
+	position:relative;
+}
+.parallax-content .parallax-header {
+	padding:150px 0;
+}
+.parallax-background {
+	background-position:center center;
+	-webkit-background-size: cover !important; 
+    -moz-background-size: cover !important;  
+    -o-background-size: cover !important; 
+    background-size: cover !important;
+	background-repeat:repeat-y;
+}
+.parallax-background.fixed {
+	background-attachment: fixed !important;
+}
+.parallax-banner-1 { background:url('../images/parallax-banner-1.jpg'); background-position: center center; }
+.parallax-banner-2 { background:url('../images/parallax-banner-2.jpg'); background-position: center center; }
+.parallax-banner-3 { background:url('../images/parallax-banner-3.jpg'); }
+.parallax-banner-4 { background:url('../images/parallax-banner-4.jpg'); background-position:center bottom !important; }
+.parallax-banner-5 { background:url('../images/parallax-banner-5.jpg'); }
+.parallax-banner-6 { background:url('../images/parallax-banner-6.jpg'); }
+.parallax-banner-7 { background:url('../images/404.jpg'); }
+
+
+.parallax-overlay-1 { background-image: url('../images/overlay-pattern.png'); }
+.parallax-overlay-2 { background-image: url('../images/overlay-pattern.png'); }
+.parallax-overlay-3 { background-image: url('../images/overlay-pattern.png'); }
+.parallax-overlay-4 { background-image: url('../images/overlay-pattern.png'); }
+.parallax-overlay-5 { background-image: url('../images/overlay-pattern.png'); }
+.parallax-overlay-6 { background-image: url('../images/overlay-pattern.png'); }
+.parallax-overlay-7 { background-image: url('../images/overlay-pattern.png'); }
+
+.parallax-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-repeat:repeat;
+	background-attachment: scroll;
+}
+
+
+/* #Media Queries
+================================================== */
+
+/* Phone & Small Tablets */
+@media screen and (max-width: 767px) {
+
+#header-section {
+	display:none;
+}
+.hero-title {
+	font-size:45px;
+	margin-top:0;
+}
+.hero-title-holder {
+	background-image: none !important;
+}	
+.hero-description {
+	display:none;
+}
+.section-title {
+	background-image: none !important;
+	font-size:25px;
+}
+.parallax-title {
+	font-size:25px;
+}
+.parallax-slogan,
+.section-slogan {
+	font-size:15px;
+}
+.section-title span {
+	background:transparent;
+	padding:0;
+}	
+.member-photo {
+	float:none;
+	margin:0 auto;
+}
+.member-box {
+	text-align: center;
+}
+.social-info {
+	display:none;
+}
+.parallax-background {
+	background-position:center center !important;
+}
+.icon-box { 
+	float:none;
+	margin-right:0;
+}
+.arrow-right {
+	display:none;
+}
+.info {
+	text-align:center;
+	margin-top:20px;
+}
+.about-box {
+	margin-bottom:10px;
+}
+.section-header {
+	padding-bottom:30px;
+}
+.content-section {
+	padding-top:50px;
+	padding-bottom:30px;
+}
+.parallax-content .parallax-header {
+	padding-top:50px;
+	padding-bottom:50px !important;
+}
+.counter-section,
+.service-section {
+	padding-bottom:30px;
+}
+.testimonial-section,
+.contact-section,
+.cta-section {
+	padding-bottom:50px;
+}
+.counter-box {
+	margin-bottom:20px;
+}
+.social-section {
+	padding-bottom:10px;
+}
+.about-section,
+.team-section {
+	padding-bottom:0;
+}
+.portfolio-category,
+.portfolio-title {
+	font-size:10px;
+	letter-spacing:1px;
+}
+.member-box {
+	margin-bottom:10px;
+}
+.js .section-title,
+.js .section-slogan,
+.js .hero .hero-holder,
+.js .about-box,
+.js .box-fade,
+.js .member-box,
+.js .portfolio-box,
+.js .ut-testimonials,
+.js .contact-wrap,
+.js .social-link,
+.js .parallax-title,
+.js .parallax-slogan,
+.js .client-logo {
+	opacity:1;
+}
+
+}
+
+/* Tablet Landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+.section-title {
+	background-image: none !important;
+}
+.section-title span {
+	background:transparent;
+	padding:0;
+}		
+.parallax-background {
+	background-position:center center !important;
+}
+.js .section-title,
+.js .section-slogan,
+.js .hero .hero-holder,
+.js .about-box,
+.js .box-fade,
+.js .member-box,
+.js .portfolio-box,
+.js .ut-testimonials,
+.js .contact-wrap,
+.js .social-link,
+.js .parallax-title,
+.js .parallax-slogan,
+.js .client-logo {
+	opacity:1;
+}
+
+}
+
+/* #Grid
+================================================== */
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+}
+}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.grid-container:before, .clearfix:before,
+.grid-container:after,
+.clearfix:after {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.grid-container:after, .clearfix:after {
+  clear: both;
+}
+
+.grid-container, .clearfix {
+  /* <IE7> */
+  *zoom: 1;
+  /* </IE7> */
+}
+
+.grid-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.grid-5, .mobile-grid-5, .grid-10, .mobile-grid-10, .grid-15, .mobile-grid-15, .grid-20, .mobile-grid-20, .grid-25, .mobile-grid-25, .grid-30, .mobile-grid-30, .grid-35, .mobile-grid-35, .grid-40, .mobile-grid-40, .grid-45, .mobile-grid-45, .grid-50, .mobile-grid-50, .grid-55, .mobile-grid-55, .grid-60, .mobile-grid-60, .grid-65, .mobile-grid-65, .grid-70, .mobile-grid-70, .grid-75, .mobile-grid-75, .grid-80, .mobile-grid-80, .grid-85, .mobile-grid-85, .grid-90, .mobile-grid-90, .grid-95, .mobile-grid-95, .grid-100, .mobile-grid-100, .grid-33, .mobile-grid-33, .grid-66, .mobile-grid-66 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* <IE7> */
+  *padding-left: 0;
+  *padding-right: 0;
+  /* </IE7> */
+}
+.grid-5 > *, .mobile-grid-5 > *, .grid-10 > *, .mobile-grid-10 > *, .grid-15 > *, .mobile-grid-15 > *, .grid-20 > *, .mobile-grid-20 > *, .grid-25 > *, .mobile-grid-25 > *, .grid-30 > *, .mobile-grid-30 > *, .grid-35 > *, .mobile-grid-35 > *, .grid-40 > *, .mobile-grid-40 > *, .grid-45 > *, .mobile-grid-45 > *, .grid-50 > *, .mobile-grid-50 > *, .grid-55 > *, .mobile-grid-55 > *, .grid-60 > *, .mobile-grid-60 > *, .grid-65 > *, .mobile-grid-65 > *, .grid-70 > *, .mobile-grid-70 > *, .grid-75 > *, .mobile-grid-75 > *, .grid-80 > *, .mobile-grid-80 > *, .grid-85 > *, .mobile-grid-85 > *, .grid-90 > *, .mobile-grid-90 > *, .grid-95 > *, .mobile-grid-95 > *, .grid-100 > *, .mobile-grid-100 > *, .grid-33 > *, .mobile-grid-33 > *, .grid-66 > *, .mobile-grid-66 > * {
+  /* <IE7> */
+  *margin-left: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+  *margin-right: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+  /* </IE7> */
+}
+
+.grid-parent {
+  padding-left: 0;
+  padding-right: 0;
+}
+.first-section,.second-section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.third-section{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.asd:after{
+	content: '';
+width: 3px;
+height: 54px;
+background: #ffa200;
+position: absolute;
+top: 42px;
+right: 0px;
+}
+#map { width: 100%; height: 500px; }
+.slider{
+	width: 1038px;
+	height: 440px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.slider li{
+	position: absolute;
+}
+.slider li.slide{
+	top:5px;
+	left:220px;
+}
+li.slide img{
+	max-width: none;
+}
+.slider li.next{
+	height: 210px;
+	width: 194px;
+	display: block;
+	background: #ffa200 url('../images/left_arrow.png') no-repeat center center;
+	top: 5px;
+	left: 5px;
+	z-index: 100;
+}
+.slider li.prev{
+	height: 210px;
+	width: 194px;
+	display: block;
+	background: #ffa200 url('../images/right_arrow.png') no-repeat center center;
+	top: 225px;
+	right: 5px;
+	z-index: 100;
+}
+.sliderbullets{
+	width: auto;
+	height: 40px;
+	margin: 0;
+	display: block;
+float: right;
+margin-right: 75px;
+}
+.sliderbullets li{
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+}
+.sliderbullets li span{
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	display: block;
+	background: #fff;
+	border-radius: 50%;
+}
+.sliderbullets li span.current_bullet{
+	background: #ffa200;
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	display: block;
+	border-radius: 50%;
+}
