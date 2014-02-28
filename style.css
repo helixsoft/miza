@@ -1177,10 +1177,28 @@ border: 4px solid transparent;
 	}
 }
 @-moz-keyframes fly {
+	0%{
+		left: 98%;
+	}
+	100%{
+		left: 2%;
+	}
 }
 @-ms-keyframes fly {
+	0%{
+		left: 98%;
+	}
+	100%{
+		left: 2%;
+	}
 }
 @keyframes fly {
+	0%{
+		left: 98%;
+	}
+	100%{
+		left: 2%;
+	}
 }
 .team-box .gap{
 	width: 203px;
