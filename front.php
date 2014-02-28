@@ -69,15 +69,19 @@ get_header(); ?>
             <div class="nav-waypoint">
                 <section id="third-section" class="first-section content-section ha-waypoint" >
                     <div class="grid-container">
-                       <div class="slidewrap">
-                            <ul class="sliderbullets">
-                                
-                            </ul>
-                            <ul class="slider" id="sliderName">
-                                <li class="next"></li>
-                                <li class="prev"></li> 
-                            </ul>
-                        </div>
+                       <div class="grid-100 tablet-grid-100 mobile-grid-100 team-box grid-parent">
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="gap"></div>
+                           <div class="gap"></div>
+                           <div class="gap"></div>
+                       </div>
                     </div>
                 </section>
                 <div class="clear"></div>
