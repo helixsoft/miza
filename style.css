@@ -1124,7 +1124,7 @@ border: 4px solid transparent;
 }
 .team-box .team-player .team-name{
 	position: absolute;
-	top:57px;
+	top:92px;
 	text-align: center;
 	left:50%;
 	font-size: 21px;
@@ -1138,7 +1138,7 @@ border: 4px solid transparent;
 }
 .team-box .team-player .team-position{
 	position: absolute;
-	top:80px;
+	top:115px;
 	text-align: center;
 	left:50%;
 	font-size: 10px;
