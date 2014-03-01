@@ -1972,6 +1972,9 @@ h2.ss-hire:after{
 .yellow-border.big{
 	border-top:6px solid #ffa200;
 }
+.yellow-bottom-border.big{
+	border-bottom:6px solid #ffa200;
+}
 .blog-border{
 	border-top:20px solid #ffa200;
 	border-bottom:9px solid #ffa200;
