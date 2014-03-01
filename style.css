@@ -1093,8 +1093,8 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 	text-align: justify;
 }
 .team-box .team-player{
-	width: 203px;
-	height: 203px;
+	width: 223px;
+	height: 223px;
 	display: inline-block;
 	margin-bottom: 70px;
 	position: relative;
@@ -1108,12 +1108,33 @@ border: 4px solid transparent;
 .team-box .team-player.no{
   margin-bottom: 0px;
 }
+.team-box .gap{
+	width: 223px;
+	display: inline-block; 
+}
+.team-box .team-player img{
+	width: 223px;
+	height: 223px;
+	border-radius:50%;
+	position: relative; 
+}
+.team-box .team-player:after{
+	content: "";
+	position: absolute;
+	background: rgba(0,0,0,1);
+	width: 223px;
+	height: 223px;
+	border-radius: 50%;
+	left: 0px;
+	z-index: 1;
+	opacity: 0;
+}
 .team-box .team-player:hover{
-	transform: scale(1.3);
-	-webkit-transform: scale(1.3) ;
-	-moz-transform: scale(1.3);
-	-o-transform: scale(1.3) ;
-	-ms-transform: scale(1.3) ;
+	transform: scale(1.183);
+	-webkit-transform: scale(1.183) ;
+	-moz-transform: scale(1.183);
+	-o-transform: scale(1.183) ;
+	-ms-transform: scale(1.183) ;
 	border: 4px solid #ffa000;
 }
 .team-box .team-player:hover:after{
@@ -1124,10 +1145,10 @@ border: 4px solid transparent;
 }
 .team-box .team-player .team-name{
 	position: absolute;
-	top:92px;
+	top:105px;
 	text-align: center;
 	left:50%;
-	font-size: 21px;
+	font-size: 23px;
 	width: 100%;
 	color: #fff;
 	-webkit-transform:translate(-50%, -50%);
@@ -1138,10 +1159,10 @@ border: 4px solid transparent;
 }
 .team-box .team-player .team-position{
 	position: absolute;
-	top:115px;
+	top:130px;
 	text-align: center;
 	left:50%;
-	font-size: 10px;
+	font-size: 11px;
 	width: 100%;
 	color: #fff;
 	font-family: nexa_boldregular;
@@ -1169,10 +1190,10 @@ border: 4px solid transparent;
 }
 .team-box .team-player .team-desc{
 	position: absolute;
-	top:160px;
+	top:180px;
 	text-align: center;
 	left:50%;
-	font-size: 10px;
+	font-size: 11px;
 	width: 100%;
 	color: #fff;
 	-webkit-transform:translate(-50%, -50%);
@@ -1181,27 +1202,7 @@ border: 4px solid transparent;
 	z-index: 2;
 	opacity: 0;
 }
-.team-box .gap{
-	width: 203px;
-	display: inline-block; 
-}
-.team-box .team-player img{
-	width: 203px;
-	height: 203px;
-	border-radius:50%;
-	position: relative; 
-}
-.team-box .team-player:after{
-	content: "";
-	position: absolute;
-	background: rgba(0,0,0,1);
-	width: 203px;
-	height: 203px;
-	border-radius: 50%;
-	left: 0px;
-	z-index: 1;
-	opacity: 0;
-}
+
 .team-arrow-area{
 	position: relative;
 }
