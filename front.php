@@ -74,10 +74,10 @@ get_header(); ?>
                            <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
                            <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
                            <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
                            <div class="gap"></div>
                            <div class="gap"></div>
                            <div class="gap"></div>
