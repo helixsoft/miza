@@ -1126,6 +1126,7 @@ border: 4px solid transparent;
 	height: 223px;
 	border-radius: 50%;
 	left: 0px;
+	top: 0px;
 	z-index: 1;
 	opacity: 0;
 }
