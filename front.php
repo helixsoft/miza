@@ -69,15 +69,18 @@ get_header(); ?>
             <div class="nav-waypoint">
                 <section id="third-section" class="first-section content-section ha-waypoint" >
                     <div class="grid-container">
+                    <div class="grid-100 tablet-grid-100 mobile-grid-100 team-arrow-area grid-parent">
+                        <div class="white-up"></div>
+                    </div>
                        <div class="grid-100 tablet-grid-100 mobile-grid-100 team-box grid-parent">
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
-                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
+                           <div class="team-player"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
+                           <div class="team-player no"><img src="<?php echo IMAGES?>/team.png"><div class="team-name">Adam Smith</div><div class="team-position">Accounts Manager</div><div class="team-fly"></div><div class="team-desc">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit</div></div>
                            <div class="gap"></div>
                            <div class="gap"></div>
                            <div class="gap"></div>
