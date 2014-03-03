@@ -1,7 +1,7 @@
             <div class="nav-waypoint">
                   <section id="footer-section" class="footer-section content-section ha-waypoint" >
                         <div class="grid-container">
-							<div class="black-arrow-up"></div>
+							<!--<div class="black-arrow-up"></div>-->
                               <div class="grid-292 tablet-grid-100 mobile-grid-100 about-box grid-parent" >
                                     <nav>
                                           <?php if ( is_page('home') ) {?>
