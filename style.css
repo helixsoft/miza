@@ -2001,11 +2001,78 @@ h2.ss-hire:after{
 .pm nav li{
 	color:#ffa200;margin-bottom: 14px;font-size: 18px;
 	list-style-image:url('images/point.png');
+	opacity: 0;
+	position: relative;
+	line-height: 24px;
+}
+.pm nav li.animate{
+	animation:move 500ms linear ;
+	-webkit-animation:move 500ms linear;
+	-moz-animation:move 500ms linear;
+	-o-animation:move 500ms linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes move{
+	0%{
+		left:-10px;
+		opacity: 0;
+	}
+	100%{
+		left:0px;
+		opacity: 1;
+	}
+}
+@-moz-keyframes move{
+	0%{
+		-webkit-transform:translateX(-10px);
+		-moz-transform:translateX(-10px);
+		transform:translateX(-10px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateX(0px);
+		-moz-transform:translateX(0px);
+		transform:translateX(0px);
+		opacity: 1;
+	}
+}
+@-o-keyframes move{
+	0%{
+		-webkit-transform:translateX(-10px);
+		-moz-transform:translateX(-10px);
+		transform:translateX(-10px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateX(0px);
+		-moz-transform:translateX(0px);
+		transform:translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes move{
+	0%{
+		-webkit-transform:translateX(-10px);
+		-moz-transform:translateX(-10px);
+		transform:translateX(-10px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateX(0px);
+		-moz-transform:translateX(0px);
+		transform:translateX(0px);
+		opacity: 1;
+	}
 }
 .pm nav li span{
 	color:#fff;
 	position: relative;
-top: 2px;
+top: 0px;
 }
 .left-title{
 	font-size:111px;

@@ -52,7 +52,6 @@ history.pushState('', document.title, window.location.pathname);
 			var $this = $( this ),
 				animClassDown = $this.data( 'animateDown' ),
 				animClassUp = $this.data( 'animateUp' );
-			
 			$this.waypoint(function(direction) {
 				
 				if( direction === 'down' && animClassDown ) {
@@ -61,6 +60,8 @@ history.pushState('', document.title, window.location.pathname);
 					$('.small-head').removeClass('small-header-show').addClass('small-header-hide');
 					$('.hero-title-holder,.btn-holder').animate({opacity:0},2000);
 					$('.icon1').css('opacity',0);
+					
+					
 				}
 				else if( direction === 'up' && animClassUp ){
 					$(window).scroll(function() {
@@ -68,6 +69,7 @@ history.pushState('', document.title, window.location.pathname);
 							$header.attr('class', 'ha-header ' + animClassUp );
 						} 
 					});
+
 					$('.small-head').removeClass('small-header-hide').addClass('small-header-show');
 					$('.hero-title-holder,.btn-holder').animate({opacity:1},2000);
 					$('.icon1').stop(true, true).delay(300).animate({opacity:1},800);
@@ -77,7 +79,6 @@ history.pushState('', document.title, window.location.pathname);
 			
 		});
 
-		
 		$('.icon').click(function(e){
 			e.preventDefault();
 			$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');
@@ -231,7 +232,49 @@ history.pushState('', document.title, window.location.pathname);
 			$('.four').children('.border').show();
 		});
 		
+		/* member box */
+		function animate_sevice() {
+				
+			$('.sevice-box nav li').each(function( k ) {
+				
+				var el = $(this);
+				
+				setTimeout ( function () {
+					el.addClass('animate');
+				},  k * 300 );
+				
+			});
 		
+		}
+		function animate_sections() {
+			
+				/* team section */
+				$('#service').waypoint( function( direction ) {
+									
+					if( direction === 'down' && !$(this).hasClass('animated') ) {
+						
+						setTimeout ( function () {
+								$('#team-section header').find('.section-title').animate({ opacity: 1 });
+						}, 200 );
+						
+						setTimeout ( function () {
+								$('#team-section header').find('.section-slogan').animate({ opacity: 1 });
+						}, 600 );
+						
+						setTimeout( animate_sevice , 1000);
+						
+						$(this).addClass('animated');
+							
+					}
+					
+				} , { offset: '80px' } );
+					
+			}
+			
+			/* no animation for mobile and ie 8 */
+			if( !device.tablet() && !device.mobile() && Modernizr.csstransitions ) {
+				animate_sections();
+			}
 	});	
 	$(function() {
 

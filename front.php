@@ -106,7 +106,7 @@ get_header(); ?>
                             </div>
                             <div class="grid-55 tablet-grid-100 mobile-grid-100 about-box grid-parent">
                                 <div class="about-box margin-bottom-none yellow-border">
-                                    <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box pm grid-parent">
+                                    <div class="grid-50 tablet-grid-100 mobile-grid-100 sevice-box pm grid-parent">
                                         <h4 class="production">Production</h4>
                                         <nav>
                                             <li><span>Graphic Design</span></li>
@@ -118,7 +118,7 @@ get_header(); ?>
                                             <li><span>App Development</span></li>
                                         </nav>
                                     </div>
-                                    <div class="grid-40 tablet-grid-100 mobile-grid-100 about-box pm grid-parent" style="margin-left: 56px;">
+                                    <div class="grid-40 tablet-grid-100 mobile-grid-100 sevice-box pm grid-parent" style="margin-left: 56px;">
                                         <h4 class="media">Media</h4>
                                         <nav>
                                             <li><span>Community Manegment</span></li>
