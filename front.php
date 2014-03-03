@@ -54,7 +54,7 @@ get_header(); ?>
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box grid-parent">
                             <div class="about-box">
                                 <h3 class="big-title-2"><span>The Brains<br/>Behind<br/>The Operation</span>
-                                    <span class="button_area"><a href="#" class="button">View Blog</a></span>
+                                    <span class="button_area"><a href="<?php echo site_url('/blog/')?>" class="button">View Blog</a></span>
                                 </h3>
                             </div>      
                         </div>
@@ -127,7 +127,7 @@ get_header(); ?>
                                             <li><span>SEM</span></li>
                                             <li><span>Data Mining</span></li>
                                         </nav>
-                                        <a href="#" class="button" style="margin-top: 24px;">View LAB</a>
+                                        <a href="<?php echo site_url('/lab/')?>" class="button" style="margin-top: 24px;">View LAB</a>
                                     </div>
                                 </div>
                             </div>      
@@ -264,7 +264,7 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-                        <h2 class="ss-hire"><a href="#" class="button relative">Hire Us</a></h2>
+                        <h2 class="ss-hire"><a id="hire4" href="#address-section" class="button relative">Hire Us</a></h2>
                         
                     </div>
                </section>
