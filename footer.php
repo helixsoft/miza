@@ -1,7 +1,6 @@
             <div class="nav-waypoint">
                   <section id="footer-section" class="footer-section content-section ha-waypoint" >
                         <div class="grid-container">
-							<!--<div class="black-arrow-up"></div>-->
                               <div class="grid-292 tablet-grid-100 mobile-grid-100 about-box grid-parent" >
                                     <nav>
                                           <?php if ( is_page('home') ) {?>
@@ -27,10 +26,8 @@
                               <div class="grid-420 tablet-grid-100 mobile-grid-100 about-box grid-parent" >
                                     <h2>Follow us on</h2>
                                     <div class="icon"><span><a href="" class="be"></a></span><span><a href="" class="d"></a></span><span><a href="" class="g"></a></span></div>
+                                    <p>Copyright © 2014 Miza Qatar Agency </p>
                               </div>
-							  <div class="grid-100 tablet-grid-100 mobile-grid-100 footer-bottom-box grid-parent">
-									<p>Copyright © 2014 Miza Qatar Agency </p>
-							  </div>
                         </div>
                   </section>
             </div>

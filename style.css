@@ -1439,18 +1439,19 @@ input[type="submit"].contact:hover{
 .footer-section nav li{
 	list-style: none;
 	float:left;
-	margin-right:36px;
+	margin-right:35px;
 }
 .footer-section nav li a{
 	color: #FFF;
 	text-decoration: none;
 	font-size:13px;
+	font-family: 'nexa_boldregular';
 }
 input[type="text"].suscribe{
 	font-size:13px;
 	letter-spacing:1px;
 	border: none;
-	border-bottom: 1px solid #ffa200;
+	border-bottom: 1px solid #e7e7e7;
 	padding:0;
 	outline: none;
 	color: #FFFFFF;
@@ -1471,6 +1472,13 @@ input[type="text"].suscribe{
 	margin-right: 0px;
 	margin-left: 25px;
 	margin-top:10px;
+	-webkit-transition : border-bottom 500ms ease-out; 
+  -moz-transition : border-bottom 500ms ease-out;
+  -o-transition : border-bottom 500ms ease-out;  
+  transition : border-bottom 500ms ease-out;   
+}
+input[type="text"].suscribe:focus{
+	border-bottom: 1px solid #ffa000;
 }
 input[type="text"].suscribe::-webkit-input-placeholder { /* WebKit browsers */
     color:    #FFF;
@@ -2598,14 +2606,11 @@ float: right;
 	width:420px;
 	float:left;
 }
-.footer-bottom-box{
-	border-top:1px solid #41414b;
-}
-.footer-bottom-box p{
-	color:#fff;
-	text-align:center;
+.grid-420 p{
+	color:#e7e7e7;
+	text-align:right;
 	font-size:11px;
-	margin-top:20px;
+	margin-top:30px;
 }
 
 @media only screen and (max-width : 1024px) {
