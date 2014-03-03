@@ -60,6 +60,7 @@ history.pushState('', document.title, window.location.pathname);
 					//$('.hero-inner').animate({ opacity : 0 });
 					$('.small-head').removeClass('small-header-show').addClass('small-header-hide');
 					$('.hero-title-holder,.btn-holder').animate({opacity:0},2000);
+					$('.icon1').css('opacity',0);
 				}
 				else if( direction === 'up' && animClassUp ){
 					$(window).scroll(function() {
@@ -67,9 +68,9 @@ history.pushState('', document.title, window.location.pathname);
 							$header.attr('class', 'ha-header ' + animClassUp );
 						} 
 					});
-					//;
 					$('.small-head').removeClass('small-header-hide').addClass('small-header-show');
 					$('.hero-title-holder,.btn-holder').animate({opacity:1},2000);
+					$('.icon1').stop(true, true).delay(300).animate({opacity:1},800);
 				}			
 			
 			}, { offset: '-1px' } );
@@ -80,10 +81,12 @@ history.pushState('', document.title, window.location.pathname);
 		$('.icon').click(function(e){
 			e.preventDefault();
 			$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');
+			$('.icon1').stop(true, true).delay(300).animate({opacity:1},800);
 		});	
 		$('.icon1').click(function(e){
 			e.preventDefault();
 			$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-show');
+			$(this).css('opacity',0);
 		});
 		
 		/* Slogan / Welcome Message Animation
