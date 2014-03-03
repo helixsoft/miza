@@ -82,6 +82,7 @@ get_header(); ?>
                                 <img src="<?php the_field('member_pic'); ?>">
                                 <div class="team-name"><?php the_title();?></div>
                                 <div class="team-position"><?php the_field('member_position'); ?></div>
+                                <div class="team-fly"></div>
                                 <div class="team-desc"><?php the_field('member_description'); ?></div>
                             </div> 
                             <?php 
