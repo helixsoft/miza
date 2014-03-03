@@ -98,10 +98,10 @@ history.pushState('', document.title, window.location.pathname);
 			
 		});
 		var top=0,key=-1;
+		var time;
 		$('#to-about-section').click( function(event) {
 			event.preventDefault();
 			top=0;key=-1;
-			$( '#header-section' ).hide();
 			$(document).on('mousewheel DOMMouseScroll', function() {
 				top = $(this).scrollTop();
 			});
@@ -109,8 +109,8 @@ history.pushState('', document.title, window.location.pathname);
 				key = e.keyCode;
 			});
 			if(top == 0 && key == -1){
-			    $.scrollTo( $('#first-section') , 1600, {  offset: 1 , 'axis':'y' } );
-				second();
+			    $.scrollTo( $('#first-section') , 1600, {  offset: -80 , 'axis':'y' ,onAfter:function(){second();}} );
+				
 			}else{
 				last();
 				return true;
@@ -119,7 +119,7 @@ history.pushState('', document.title, window.location.pathname);
 		});
 		
 		function second(){
-			setTimeout(function(){
+			time=setTimeout(function(){
 				$(document).on('mousewheel DOMMouseScroll', function() {
 					top = $(this).scrollTop();
 				});
@@ -128,7 +128,7 @@ history.pushState('', document.title, window.location.pathname);
 				});
 				
 				if(top == 0 && key == -1){
-					$.scrollTo( $('#second-section') , 1600, {  offset: 1 , 'axis':'y' } );
+					$.scrollTo( $('#second-section') , 1600, {  offset: -80 , 'axis':'y', onAfter:function(){clearTimeout(time);third();}} );
 					third();
 				}else{
 					last();
@@ -136,7 +136,7 @@ history.pushState('', document.title, window.location.pathname);
 			}, 5000);
 		}
 		function third(){
-			setTimeout(function(){
+			time=setTimeout(function(){
 				$(document).on('mousewheel DOMMouseScroll', function() {
 						top = $(this).scrollTop();
 				});
@@ -144,15 +144,14 @@ history.pushState('', document.title, window.location.pathname);
 					key = e.keyCode;
 				});
 				if(top == 0 && key == -1){
-					$.scrollTo( $('#third-section') , 1600, {  offset: 1 , 'axis':'y' } );	
-					fourth();
+					$.scrollTo( $('#third-section') , 1600, {  offset: -80 , 'axis':'y' ,onAfter:function(){clearTimeout(time);fourth();}} );	
 				}else{
 					last();
 				}
 			}, 5000);
 		}
 		function fourth(){
-			setTimeout(function(){
+			time=setTimeout(function(){
 				$(document).on('mousewheel DOMMouseScroll', function() {
 					top = $(this).scrollTop();
 				});
@@ -160,15 +159,14 @@ history.pushState('', document.title, window.location.pathname);
 					key = e.keyCode;
 				});	
 				if(top == 0 && key == -1){
-					$.scrollTo( $('#service') , 1600, {  offset: 1 , 'axis':'y' } );
-					fifth();
+					$.scrollTo( $('#service') , 1600, {  offset: -80 , 'axis':'y' ,onAfter:function(){clearTimeout(time);fifth();}} );
 				}else{
 					last();
 				}
 			}, 5000);
 		}
 		function fifth(){
-			setTimeout(function(){
+			time=setTimeout(function(){
 				$(document).on('mousewheel DOMMouseScroll', function() {
 					top = $(this).scrollTop();
 				});
@@ -176,16 +174,14 @@ history.pushState('', document.title, window.location.pathname);
 					key = e.keyCode;
 				});
 				if(top == 0 && key == -1){
-					$.scrollTo( $('#six-section') , 20000, {  offset: 1 , 'axis':'y' } );
-					sixth();
+					$.scrollTo( $('#six-section') , 20000, {  easing: 'linear',offset: -80 , 'axis':'y' ,onAfter:function(){clearTimeout(time);sixth();}} );
 				}else{
-					//$(window)._scrollable().stop(true, false);
 					last();
 				}
 			}, 5000);
 		}
 		function sixth(){
-			setTimeout(function(){
+			time=setTimeout(function(){
 				$(document).on('mousewheel DOMMouseScroll', function() {
 					top = $(this).scrollTop();
 				});
@@ -193,8 +189,7 @@ history.pushState('', document.title, window.location.pathname);
 					key = e.keyCode;
 				});
 				if(top == 0 && key == -1){
-					$.scrollTo( $('#address-section') , 1600, {  offset: 1 , 'axis':'y' } );
-					last();
+					$.scrollTo( $('#address-section') , 1600, {  offset: -80 , 'axis':'y' ,onAfter:function(){clearTimeout(time);last();}} );
 				}else{
 					last();
 				}
@@ -202,7 +197,6 @@ history.pushState('', document.title, window.location.pathname);
 		}
 		function last(){
 			$(window)._scrollable().stop(true, false);
-			$( '#header-section' ).show();
 		}
 		/* Scroll to Main
 		================================================== */
