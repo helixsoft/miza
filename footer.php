@@ -57,12 +57,9 @@ if ( is_page('home') ) {?>
                   
             });
             
-            $('#sev-nav3,#sev-nav2,#sev-nav1,#hire1,#hire2,#hire3').click( function(event) { 
-                        
+            $('#sev-nav3,#sev-nav2,#sev-nav1,#hire1,#hire2,#hire3').click( function(event) {        
                   event.preventDefault();
-                  $( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');
-                  $.scrollTo( $(this).attr('href') ,2000, { easing: 'swing' , offset: 1 , 'axis':'y' } );               
-                  
+                  $.scrollTo( $(this).attr('href') ,2000, { easing: 'swing' , offset: -80 , 'axis':'y' } );      
             });
       });
 <?php } else { ?>

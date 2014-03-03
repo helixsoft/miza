@@ -26,12 +26,12 @@ history.pushState('', document.title, window.location.pathname);
 			$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');	
 		}
 		if(hash=='#service'){
-			$.scrollTo( '#service' ,2000, { easing: 'swing' , offset: 1 , 'axis':'y' } );
-			$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');	
+			$.scrollTo( '#service' ,2000, { easing: 'swing' , offset: -80 , 'axis':'y' } );
+			//$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');	
 		}	
 		if(hash=='#address-section'){
-			$.scrollTo( '#address-section' ,2000, { easing: 'swing' , offset: 1 , 'axis':'y' } );
-			$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');	
+			$.scrollTo( '#address-section' ,2000, { easing: 'swing' , offset: -80 , 'axis':'y' } );
+			//$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');	
 		}
 		$('.address-box .contact').on("click",function(){
             if($('#contact-section').css('display')=='none' || $(this).parent().parent('.address-box').hasClass('selected')){
