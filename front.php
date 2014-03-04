@@ -73,24 +73,28 @@ get_header(); ?>
                         <div class="white-up"></div>
                     </div>
                        <div class="grid-100 tablet-grid-100 mobile-grid-100 team-box grid-parent">
+                        <div id="ca-container" class="ca-container">
+                <div class="ca-wrapper">
+                    
                             <?php 
                                 $args = array( 'post_type' => 'members', 'posts_per_page' => -1,'post_status'=>'publish' );
                                 $loop = new WP_Query( $args );
                                 while ( $loop->have_posts() ) : $loop->the_post();
                             ?>
+                            <div class="ca-item">
                             <div class="team-player">
                                 <img src="<?php the_field('member_pic'); ?>">
                                 <div class="team-name"><?php the_title();?></div>
                                 <div class="team-position"><?php the_field('member_position'); ?></div>
                                 <div class="team-fly"></div>
                                 <div class="team-desc"><?php the_field('member_description'); ?></div>
-                            </div> 
+                            </div>
+                            </div>
                             <?php 
                                 endwhile;
-                            ?>                          
-                           <div class="gap"></div>
-                           <div class="gap"></div>
-                           <div class="gap"></div>
+                            ?>
+                            </div>
+                            </div>                          
                        </div>
                     </div>
                 </section>

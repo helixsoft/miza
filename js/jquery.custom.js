@@ -231,8 +231,25 @@ history.pushState('', document.title, window.location.pathname);
 			$('.three').children('.border').show();
 			$('.four').children('.border').show();
 		});
+
+		$('#ca-container').contentcarousel();
+
+		/* team box */
+		function animate_team() {
+				
+			$('.team-box .team-player').each(function( k ) {
+				
+				var el = $(this);
+				
+				setTimeout ( function () {
+					el.addClass('animate');
+				},  k * 5000 );
+				
+			});
 		
-		/* member box */
+		}
+
+		/* service box */
 		function animate_sevice() {
 				
 			$('.sevice-box nav li').each(function( k ) {
@@ -249,17 +266,21 @@ history.pushState('', document.title, window.location.pathname);
 		function animate_sections() {
 			
 				/* team section */
-				$('#service').waypoint( function( direction ) {
+				$('#third-section').waypoint( function( direction ) {
 									
 					if( direction === 'down' && !$(this).hasClass('animated') ) {
 						
-						setTimeout ( function () {
-								$('#team-section header').find('.section-title').animate({ opacity: 1 });
-						}, 200 );
+						setTimeout( animate_team , 1000);
 						
-						setTimeout ( function () {
-								$('#team-section header').find('.section-slogan').animate({ opacity: 1 });
-						}, 600 );
+						$(this).addClass('animated');
+							
+					}
+					
+				} , { offset: '80px' } );
+
+				$('#service').waypoint( function( direction ) {
+									
+					if( direction === 'down' && !$(this).hasClass('animated') ) {
 						
 						setTimeout( animate_sevice , 1000);
 						
@@ -267,7 +288,7 @@ history.pushState('', document.title, window.location.pathname);
 							
 					}
 					
-				} , { offset: '80px' } );
+				} , { offset: '300px' } );
 					
 			}
 			
@@ -275,6 +296,17 @@ history.pushState('', document.title, window.location.pathname);
 			if( !device.tablet() && !device.mobile() && Modernizr.csstransitions ) {
 				animate_sections();
 			}
+
+
+			
+			/*var int = setInterval("$('.ca-nav-next').trigger('click');",5000);*/    
+
+			/*$('.ca-item').hover(function(){
+			    clearInterval(int);
+			},function(){
+			    int = setInterval("$('.ca-nav-next').trigger('click');",5000);    
+			});*/
+		
 	});	
 	$(function() {
 

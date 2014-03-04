@@ -40,6 +40,7 @@
 <script src="<?php echo THEMEROOT?>/js/jquery.custom.js"></script>
 <script src="<?php echo THEMEROOT?>/js/plugin.js"></script>
 <script src="<?php echo THEMEROOT?>/js/jquery.mixitup.min.js"></script>
+<script src="<?php echo THEMEROOT?>/js/jquery.contentcarousel.js"></script>
 <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true&language=en"></script>
 <script type="text/javascript">
       <?php
