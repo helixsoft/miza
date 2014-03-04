@@ -1113,7 +1113,7 @@ opacity: 1;
 
 .ca-container{
 	position:relative;
-	width:950px;
+	width:880px;
 	margin: 0 auto;
 	height:219px;
 }
@@ -1125,7 +1125,7 @@ opacity: 1;
 .ca-item{
 	position:relative;
 	float:left;
-	width:236px;
+	width:219px;
 	height:219px;
 	text-align:center;
 }
@@ -1135,7 +1135,7 @@ opacity: 1;
 	position:absolute;
 	top:50%;
 	margin-top:-42px;
-	left:-48px;
+	left:-80px;
 	text-indent:-9000px;
 	opacity:1;
 	cursor:pointer;
@@ -1150,7 +1150,7 @@ opacity: 1;
 .ca-nav span.ca-nav-next{
 	background:transparent url(images/team_right_arrow.png) no-repeat 0px 0px;
 	left:auto;
-	right:-48px;
+	right:-80px;
 }
 .ca-nav span.ca-nav-next:hover{
 	background:transparent url(images/team_right_arrow.png) no-repeat -62px 0px;
