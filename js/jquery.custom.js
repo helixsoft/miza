@@ -243,7 +243,7 @@ history.pushState('', document.title, window.location.pathname);
 				
 				setTimeout ( function () {
 					el.addClass('animate');
-				},  k * 5000 );
+				},  k * 1500 );
 				
 			});
 		
@@ -276,7 +276,7 @@ history.pushState('', document.title, window.location.pathname);
 							
 					}
 					
-				} , { offset: '80px' } );
+				} , { offset: '300px' } );
 
 				$('#service').waypoint( function( direction ) {
 									
