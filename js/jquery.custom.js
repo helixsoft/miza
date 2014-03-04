@@ -233,20 +233,59 @@ history.pushState('', document.title, window.location.pathname);
 		});
 
 		$('#ca-container').contentcarousel();
-
-		/* team box */
+		$('.ca-nav').hide();	
+		$('.ca-nav-next').bind('click.contentcarousel', function( event ) {
+				$('.team-box .team-player').each(function( k ) {
+					var el = $(this);
+					if(k==4){
+						el.removeClass('animate');
+						setTimeout ( function () {
+							el.addClass('animate');
+						},1);
+					}
+				});
+		});
+		$('#ca-container').bind('mousewheel.contentcarousel', function(e, delta) {
+			if(delta > 0) {
+				$('.team-box .team-player').each(function( k ) {
+					var el = $(this);
+					if(k==4){
+						el.removeClass('animate');
+						setTimeout ( function () {
+							el.addClass('animate');
+						},1);
+					}
+				});
+			}	
+			else {
+				$('.team-box .team-player').each(function( k ) {
+					var el = $(this);
+					if(k==4){
+						el.removeClass('animate');
+						setTimeout ( function () {
+							el.addClass('animate');
+						},1);
+					}
+				});
+			}	
+		});
 		function animate_team() {
-				
+			
+			var len=$('.team-box .team-player').length;
 			$('.team-box .team-player').each(function( k ) {
 				
 				var el = $(this);
 				
 				setTimeout ( function () {
-					el.addClass('animate');
-				},  k * 1500 );
-				
+					if(k<4){
+						el.addClass('animate');
+					}
+					else{
+						$('.ca-nav').show();
+					}
+				},  k*500 );
 			});
-		
+			
 		}
 
 		/* service box */
@@ -276,7 +315,7 @@ history.pushState('', document.title, window.location.pathname);
 							
 					}
 					
-				} , { offset: '300px' } );
+				} , { offset: '450px' } );
 
 				$('#service').waypoint( function( direction ) {
 									

@@ -1074,6 +1074,10 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+.third-section{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .address-section{
 	background: rgba(255,255,255,0.95);
 }
@@ -1109,7 +1113,7 @@ opacity: 1;
 
 .ca-container{
 	position:relative;
-	width:968px;
+	width:950px;
 	margin: 0 auto;
 	height:219px;
 }
@@ -1121,7 +1125,7 @@ opacity: 1;
 .ca-item{
 	position:relative;
 	float:left;
-	width:242px;
+	width:236px;
 	height:219px;
 	text-align:center;
 }
@@ -1131,7 +1135,7 @@ opacity: 1;
 	position:absolute;
 	top:50%;
 	margin-top:-42px;
-	left:-30px;
+	left:-48px;
 	text-indent:-9000px;
 	opacity:1;
 	cursor:pointer;
@@ -1146,7 +1150,7 @@ opacity: 1;
 .ca-nav span.ca-nav-next{
 	background:transparent url(images/team_right_arrow.png) no-repeat 0px 0px;
 	left:auto;
-	right:-30px;
+	right:-48px;
 }
 .ca-nav span.ca-nav-next:hover{
 	background:transparent url(images/team_right_arrow.png) no-repeat -62px 0px;
@@ -1163,10 +1167,10 @@ opacity: 1;
 	position: relative; 
 }
 .team-box .team-player.animate{
-	animation:pop 3000ms linear ;
-	-webkit-animation:pop 3000ms linear;
-	-moz-animation:pop 3000ms linear;
-	-o-animation:pop 3000ms linear;
+	animation:pop 1000ms linear ;
+	-webkit-animation:pop 1000ms linear;
+	-moz-animation:pop 1000ms linear;
+	-o-animation:pop 1000ms linear;
 }
 @-webkit-keyframes pop{
 	0%{
@@ -1187,10 +1191,10 @@ opacity: 1;
 	}
 }
 .team-box .team-player.animate:after{
-	animation:pop_b 3000ms linear ;
-	-webkit-animation:pop_b 3000ms linear;
-	-moz-animation:pop_b 3000ms linear;
-	-o-animation:pop_b 3000ms linear;
+	animation:pop_b 1000ms linear ;
+	-webkit-animation:pop_b 1000ms linear;
+	-moz-animation:pop_b 1000ms linear;
+	-o-animation:pop_b 1000ms linear;
 }
 @-webkit-keyframes pop_b{
 	0%{
@@ -1201,10 +1205,10 @@ opacity: 1;
 	}
 }
 .team-box .team-player.animate .team-name,.team-box .team-player.animate .team-position,.team-box .team-player.animate .team-fly,.team-box .team-player.animate .team-desc{
-	animation:pop_t 3000ms linear ;
-	-webkit-animation:pop_t 3000ms linear;
-	-moz-animation:pop_t 3000ms linear;
-	-o-animation:pop_t 3000ms linear;
+	animation:pop_t 1000ms linear ;
+	-webkit-animation:pop_t 1000ms linear;
+	-moz-animation:pop_t 1000ms linear;
+	-o-animation:pop_t 1000ms linear;
 }
 @-webkit-keyframes pop_t{
 	0%{
@@ -1309,7 +1313,7 @@ opacity: 1;
 	height:19px;
 	display:block;
 	position:absolute;
-	top:-68px;
+	top:-28px;
 	right:0px;
 	float:right;
 	opacity: 0.95;

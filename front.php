@@ -67,7 +67,7 @@ get_header(); ?>
                </section>
             </div>
             <div class="nav-waypoint">
-                <section id="third-section" class="first-section content-section ha-waypoint yellow-bottom-border big" >
+                <section id="third-section" class="third-section content-section ha-waypoint yellow-bottom-border big" >
                     <div class="grid-container">
                     <div class="grid-100 tablet-grid-100 mobile-grid-100 team-arrow-area grid-parent">
                         <div class="white-up"></div>
