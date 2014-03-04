@@ -58,7 +58,7 @@ history.pushState('', document.title, window.location.pathname);
 					$header.attr('class', 'ha-header ' + animClassDown );
 					//$('.hero-inner').animate({ opacity : 0 });
 					$('.small-head').removeClass('small-header-show').addClass('small-header-hide');
-					$('.hero-title-holder,.btn-holder').animate({opacity:0},2000);
+					//$('.hero-title-holder,.btn-holder').animate({opacity:0},2000);
 					$('.icon1').css('opacity',0);
 					
 					
@@ -71,7 +71,7 @@ history.pushState('', document.title, window.location.pathname);
 					});
 
 					$('.small-head').removeClass('small-header-hide').addClass('small-header-show');
-					$('.hero-title-holder,.btn-holder').animate({opacity:1},2000);
+					//$('.hero-title-holder,.btn-holder').animate({opacity:1},2000);
 					$('.icon1').stop(true, true).delay(300).animate({opacity:1},800);
 				}			
 			

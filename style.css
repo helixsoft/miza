@@ -198,10 +198,11 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 	box-shadow:         0px 0px 0px 0px #cecece;
 }
 .small-header-hide {
-    height: 300px;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  transform: translateY(-100%);
+   top: -300px;
+   position: relative;
+  -webkit-transform: top;
+  -moz-transform: top;
+  transform: top;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
@@ -216,10 +217,11 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 }
 .small-header-show {
-    height: 0px;
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  transform: translateY(0%);
+   top: 0px;
+    position: relative;
+  -webkit-transform: top;
+  -moz-transform: top;
+  transform: top;
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
   transition: all 2s;
@@ -259,7 +261,7 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 	position:relative;
 	overflow:hidden;
 	text-align:center;
-	z-index:750;
+	z-index:400;
 }
 .hero .hero-holder {
 	display:inline-block;
@@ -274,6 +276,9 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 	padding-left:10px;
 	padding-right: 10px; 
 }
+.hero .hero-holder.home {
+	position:fixed;
+}
 .js .hero .hero-holder {
 	opacity:0;
 }
@@ -285,6 +290,7 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 	border-top:1px solid #fff;
 	border-bottom: 1px solid #fff;
 	width: 100%;
+	
 }
 .hero-blog-title-holder {
 	background-attachment: scroll;
