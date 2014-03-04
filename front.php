@@ -289,7 +289,7 @@ get_header(); ?>
                     </div>
                 </section>
                 <div class="clear"></div>
-                <section id="seven-section" class="third-section content-section ha-waypoint" >
+                <section id="seven-section" class="address-section content-section ha-waypoint" >
                     <div id="map"></div>
                 </section>
                <div class="clear"></div>
@@ -323,8 +323,8 @@ get_header(); ?>
                                 
                         </div>
                         <div class="grid-25 tablet-grid-100 mobile-grid-100 grid-parent about-box">
-                            <div class="address-box three">
-                                <h4 class="location-name" data-lat="30.080293" data-log="31.340617">Cairo</h4>
+                            <div class="address-box three"  data-lat="30.080293" data-log="31.340617">
+                                <h4 class="location-name">Cairo</h4>
                                 <div class="address clearfix">
                                     <p class="clearfix"><i class="icon-home"></i><span class="text">63-64 Margaret St London, England</span></p>
                                     <p class="clearfix"><i class="icon-phone"></i><span class="text">+44 (0)20 7636 4842</span></p>
