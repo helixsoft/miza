@@ -149,7 +149,7 @@ get_header(); ?>
                     <div class="grid-container">
                         <div class="grid-40 tablet-grid-100 mobile-grid-100 about-box" >
                             <div class="about-box">
-                                <h3 class="left-title">Process</h3>
+                                <h3 class="left-title a">Process</h3>
                             </div>      
                         </div>
                          <div class="grid-60 tablet-grid-100 mobile-grid-100 about-box">
@@ -278,7 +278,7 @@ get_header(); ?>
                     <div class="grid-container">
                         <div class="grid-40 tablet-grid-100 mobile-grid-100 about-box" >
                             <div class="about-box">
-                                <h3 class="left-title">Find us</h3>
+                                <h3 class="left-title b">Find us</h3>
                             </div>      
                         </div>
                          <div class="grid-60 tablet-grid-100 mobile-grid-100 about-box">

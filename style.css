@@ -2527,13 +2527,22 @@ top: 0px;
 	color:#333f4f;
 	position:relative;
 }
-.left-title:after{
+.left-title.a:after{
 	content: '';
 	width: 3px;
-	height: 54px;
+	height: 76px;
 	background: #ffa200;
 	position: absolute;
-	top: 42px;
+	top: 28px;
+	right: 0px;
+}
+.left-title.b:after{
+	content: '';
+	width: 3px;
+	height: 76px;
+	background: #ffa200;
+	position: absolute;
+	top: 28px;
 	right: 0px;
 }
 .left-disc{
