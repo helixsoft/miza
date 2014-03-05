@@ -355,7 +355,7 @@ history.pushState('', document.title, window.location.pathname);
 							
 					}
 					
-				} , { offset: '300px' } );
+				} , { offset: '400px' } );
 					
 			}
 			
