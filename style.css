@@ -3135,6 +3135,15 @@ float: right;
 	margin-top:30px;
 }
 
+.success-message,
+.alert-message,
+.error-message {
+	display:none;
+	font-size:12px;
+	letter-spacing:1px;
+	text-align: center;
+	color: #fff;
+}
 @media only screen and (max-width : 1024px) {
 	.excerpt-area{
 		margin-left:0px;

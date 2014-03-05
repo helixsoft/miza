@@ -366,13 +366,7 @@ history.pushState('', document.title, window.location.pathname);
 
 
 			
-			/*var int = setInterval("$('.ca-nav-next').trigger('click');",5000);*/    
-
-			/*$('.ca-item').hover(function(){
-			    clearInterval(int);
-			},function(){
-			    int = setInterval("$('.ca-nav-next').trigger('click');",5000);    
-			});*/
+		
 		
 	});	
 	$(function() {

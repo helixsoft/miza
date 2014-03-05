@@ -353,11 +353,14 @@ get_header(); ?>
                <section id="contact-section" class="contact-section content-section ha-waypoint"  >
                     <div class="grid-container">
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent about-box" >
-                            <form>
-                                <input  class="contact" type="text" placeholder="Name"></text>
-                                <input  class="contact" type="text" placeholder="Email"></text>
-                                <input  class="contact" type="submit" value="Send"></text>
-                                <input  class="contact big" type="text" placeholder="Message"></text>
+                            <form id="contact-form" class="contact-form">
+                                <input name="name" class="contact" type="text" placeholder="Name"></text>
+                                <input name="email" class="contact" type="text" placeholder="Email"></text>
+                                <input name="send-btn" class="contact" type="submit" value="Send"></text>
+                                <input name="message" class="contact big" type="text" placeholder="Message"></text>
+                                <div class="success-message">Email has been sent!</div>
+                                <div class="alert-message"></div>
+                                <div class="error-message">Email could not be delivered. Please try again later!</div>
                             </form>
                         </div>
                     </div>
