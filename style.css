@@ -2280,10 +2280,16 @@ h2.ss-hire:after{
 .small-title-text{
 	margin-bottom: 20px;
 }
+.small-title-text.a{
+	margin-top: 10px;
+}
 .small-desc-1{
 	color: #a0a0a0;
 	font-size: 14px;
 	margin-bottom: 20px;
+}
+.small-desc-1.a{
+	margin-bottom: 6px;
 }
 .big-desc-1{
 	color: #000;
@@ -2405,7 +2411,7 @@ top: 0px;
 	right: 0px;
 }
 .left-disc{
-	margin-top:35px;
+	margin-top:28px;
 	margin-left:20px;
 	color: #000;
 	font-size: 20px;
