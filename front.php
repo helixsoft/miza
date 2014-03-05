@@ -9,39 +9,39 @@ get_header(); ?>
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent" >
                             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent">
                                 <div class="about-box">
-                                    <h3 class="big-title-1">Not Your  Avarage Pitch<img src="<?php echo IMAGES?>/mic.png" alt="app-development"></h3>
+                                    <h3 class="big-title-1">Not Your Average Pitch<img src="<?php echo IMAGES?>/mic.png" alt="app-development"></h3>
                                 </div>
                             </div>
                             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none margin-top-17 grid-parent" >
                                 <div class="grid-40 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent margin-left-43">
                                     <div class="about-box">
-                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon2.png" alt="app-development" class="float-left margin-right-10"><span class="small-heading-1">Lorem Ipsum</span></h3>
-                                        <p class="small-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lacus tortor. Fusce scelerisque nulla ut turpis facilisis mollis. Suspendisse vel mattis diam. </p>
+                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon2.png" alt="app-development" class="float-left margin-right-10"><span class="small-heading-1">Vision</span></h3>
+                                        <p class="small-desc-1">Looking ahead is the key to our performance. There is no pride in perceiving the present as our canvas. The future is our playground; it’s infinite and optimistic.</p>
                                     </div>
                                 </div>
                                 <div class="grid-40 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent margin-left-60">
                                     <div class="about-box">
-                                        <h3 class="small-title-text"><img  src="<?php echo IMAGES?>/icon3.png" alt="ui-design" class="float-left margin-right-10"><span class="small-heading-1">Lorem Ipsum</span></h3>
-                                        <p class="small-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lacus tortor. Fusce scelerisque nulla ut turpis facilisis mollis. Suspendisse vel mattis diam. </p>
+                                        <h3 class="small-title-text"><img  src="<?php echo IMAGES?>/icon3.png" alt="ui-design" class="float-left margin-right-10"><span class="small-heading-1">Integration</span></h3>
+                                        <p class="small-desc-1">Your brand values are our top priority. Whether we’re than a new road or tapping into your vision, we’ll turn it into a successful masterpiece.</p>
                                     </div>
                                 </div>
                                 <div class="grid-40 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent margin-left-43">
                                     
                                     <div class="about-box">
-                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon4.png" alt="brand-identity" class="float-left margin-right-10"><span class="small-heading-1">Lorem Ipsum</span></h3>
-                                        <p class="small-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lacus tortor. Fusce scelerisque nulla ut turpis facilisis mollis. Suspendisse vel mattis diam.</p>
+                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon4.png" alt="brand-identity" class="float-left margin-right-10"><span class="small-heading-1">Innovation</span></h3>
+                                        <p class="small-desc-1">Innovation is our lifeline; it runs through us continuously without a moment’s hesitation. Watch us bring your brand, your ideas, and your aspirations to life.</p>
                                     </div>
                                 </div>
                                 <div class="grid-40 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent margin-left-60" >  
                                     <div class="about-box">
-                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon1.png" alt="consultancy" class="float-left margin-right-10"><span class="small-heading-1">Lorem Ipsum</span></h3>
-                                        <p class="small-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lacus tortor. Fusce scelerisque nulla ut turpis facilisis mollis. Suspendisse vel mattis diam. </p>
+                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon1.png" alt="consultancy" class="float-left margin-right-10"><span class="small-heading-1">Results</span></h3>
+                                        <p class="small-desc-1">The fruits of your success are measured by the newly found reputation you’ve earned and transformed into online and offline results. It’s your time; let’s make it happen.</p>
                                     </div>
                                 </div>
                             </div>
                            <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent">
                                 <div class="about-box margin-bottom-none yellow-border">
-                                    <p class="big-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum metus ipsum, vel semper risus laoreet quis. Donec vulputate, tellus vitae interdum rutrum, arcu urna vulpu neque. Fusce vehicula elit est, eu condimentum diam pulvinar nonLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec</p> 
+                                    <p class="big-desc-1">As a Digital Reputation Management Agency, we transform your average brand into a colossal epidemic, to turn heads both online & off. Our principles and motives are not based on the ideals of our own success, rather the victory lies within yours and every brand we have the pleasure of working alongside.</p> 
                                 </div>
                            </div>
                         </div>
@@ -60,14 +60,14 @@ get_header(); ?>
                         </div>
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent">
                             <div class="about-box margin-bottom-none yellow-border">
-                                <p class="big-desc-1 white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum metus ipsum, vel semper risus laoreet quis. Donec vulputate, tellus vitae interdum rutrum, arcu urna vulpu neque. Fusce vehicula elit est, eu condimentum diam pulvinar nonLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec</p> 
+                                <p class="big-desc-1 white">Carefully chosen and handpicked, we are our own most prized asset. The team works closely together, performing at optimum levels to integrate creativity from all aspects of our principles. Creative, development, design, and management teams are all vital to the outcome of your brand’s new sparkling image.</p> 
                             </div>
                        </div>
                     </div>
                </section>
             </div>
             <div class="nav-waypoint">
-                <section id="third-section" class="third-section content-section ha-waypoint yellow-bottom-border big" >
+                <section id="third-section" class="third-section content-section ha-waypoint" >
                     <div class="grid-container">
                     <div class="grid-100 tablet-grid-100 mobile-grid-100 team-arrow-area grid-parent">
                         <div class="white-up"></div>
@@ -138,7 +138,7 @@ get_header(); ?>
                         </div>
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent">
                             <div class="about-box margin-bottom-none yellow-border">
-                                <p class="big-desc-1 white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum metus ipsum, vel semper risus laoreet quis. Donec vulputate, tellus vitae interdum rutrum, arcu urna vulpu neque. Fusce vehicula elit est, eu condimentum diam pulvinar nonLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec</p> 
+                                <p class="big-desc-1 white">We offer a wide range of services, all equipped and utilized for the purpose of creating an enhanced reputation for your brand. Keep up and stay ahead of the pack, put your brand on the map, or rather create the map and become the epitome of the definitive benchmark for all others. Strive to be the best.</p> 
                             </div>
                        </div>
                     </div>
@@ -154,7 +154,7 @@ get_header(); ?>
                         </div>
                          <div class="grid-60 tablet-grid-100 mobile-grid-100 about-box">
                             <div class="about-box">
-                                <p class="left-disc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum metus ipsum, vel semper risus laoreet quis. Donec vulputate, tellus vitae interdum rutrum, arcu urna vulpu neque</p> 
+                                <p class="left-disc">More than the way we do things, it’s our way of life. We live and breathe by these principles and that’s what makes our process so successful. Creative yet structured, that’s who we are.</p> 
                             </div>      
                         </div>
                     </div>
@@ -172,7 +172,7 @@ get_header(); ?>
                                 <div class="ss-right">
                                     <h3>
                                         <a>Discovery</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum. Donec arcu nunc, facilisis id leo ac, pharetra vestibulum mauris. Duis et ante eget purus iaculis dignissim non ac massa. Sed aLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. </span>
+                                        <span>It all starts with you. We want to get to know not just your brand, but also the brains behind it. After all, your work is an extension of who you are; there’s no better way around it. Your mission, your goals, your passion, and your dreams tell us a lot about where you’d like to land, and we’re merely the creative intelligence hub that gets you there.</span>
                                     </h3>
 
                                 </div>
@@ -180,8 +180,8 @@ get_header(); ?>
                             <div class="ss-row ss-small">
                                 <div class="ss-left">
                                     <h3>
-                                        <a>Information Collection</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum.</span>
+                                        <a>Collection</a>
+                                        <span>Information collection is our stepping-stone. We seek to understand your true nature and the nature of your brand, through yourself, and our independent research.</span>
                                     </h3>
                                 </div>
                                 <div class="ss-right">
@@ -191,8 +191,8 @@ get_header(); ?>
                             <div class="ss-row ss-small">
                                 <div class="ss-left">
                                     <h3>
-                                        <a>Information Collection</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum.</span>
+                                        <a>Analysis</a>
+                                        <span>We investigate and evaluate where you are, where you need to be, & how we’ll get you there. Deep excavation and thorough understanding is key to our examination. We dig through the good, the bad, the ugly & everything in between.</span>
                                     </h3>
                                 </div>
                                 <div class="ss-right">
@@ -206,7 +206,7 @@ get_header(); ?>
                                 <div class="ss-right">
                                     <h3>
                                         <a>Interpretation</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum. Donec arcu nunc, facilisis id leo ac, pharetra vestibulum mauris. Duis et ante eget purus iaculis dignissim non ac massa. Sed aLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. </span>
+                                        <span>What it all means. We’ve become an information hub on the subject of your brand’s past, present, and future. We’ve collected bits and bytes of essential facts and figures that will now be pieced together to form a big picture. Identifying with the facts, the team comes together, creativity is set into gear, and we’re now in motion.</span>
                                     </h3>
 
                                 </div>
@@ -214,8 +214,8 @@ get_header(); ?>
                             <div class="ss-row ss-small">
                                 <div class="ss-left">
                                     <h3>
-                                        <a>Information Collection</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum.</span>
+                                        <a>Guidelines</a>
+                                        <span>Limitations and borders are set to ensure the team is always on the same page. These parameters are made up of your preferences and our expertise. Once these lines are colored in, the big picture will begin to form.</span>
                                     </h3>
                                 </div>
                                 <div class="ss-right">
@@ -225,8 +225,8 @@ get_header(); ?>
                             <div class="ss-row ss-small">
                                 <div class="ss-left">
                                     <h3>
-                                        <a>Information Collection</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum.</span>
+                                        <a>Application</a>
+                                        <span>The canvas is just about ready for the world to see. This part of the process allows us to put every aspect of our work into action.</span>
                                     </h3>
                                 </div>
                                 <div class="ss-right">
@@ -240,7 +240,7 @@ get_header(); ?>
                                 <div class="ss-right">
                                     <h3>
                                         <a>Execution</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum. Donec arcu nunc, facilisis id leo ac, pharetra vestibulum mauris. Duis et ante eget purus iaculis dignissim non ac massa. Sed aLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. </span>
+                                        <span>At this stage, the end result is coming along nicely, and we’re working together closely to ensure that only the best of the best gets filtered through. Our closing stage does not end at delivery; it goes deeper than handing over a polished product. We stick around, measure results, and provide our clients with feedback and tweaks where necessary.</span>
                                     </h3>
 
                                 </div>
@@ -248,8 +248,8 @@ get_header(); ?>
                             <div class="ss-row ss-small">
                                 <div class="ss-left">
                                     <h3>
-                                        <a>Feedback</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum.</span>
+                                        <a>Delivery</a>
+                                        <span>This is by far our favorite part of the process. Our work is our pride and it’s evident no matter what side of the table you’re sitting on, smiles are all around</span>
                                     </h3>
                                 </div>
                                 <div class="ss-right">
@@ -259,8 +259,8 @@ get_header(); ?>
                             <div class="ss-row ss-small">
                                 <div class="ss-left">
                                     <h3>
-                                        <a>Manegment</a>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor mollis placerat. Nam at ipsum ligula. Sed eget augue ut augue eleifend elementum.</span>
+                                        <a>Measuring Results </a>
+                                        <span>How our work has performed and will continue to perform is a test we’re always eager to take. Improvement is not a weakness and we’re always staying ahead.</span>
                                     </h3>
                                 </div>
                                 <div class="ss-right">
@@ -283,7 +283,7 @@ get_header(); ?>
                         </div>
                          <div class="grid-60 tablet-grid-100 mobile-grid-100 about-box">
                             <div class="about-box">
-                                <p class="left-disc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum metus ipsum, vel semper risus laoreet quis. Donec vulputate, tellus vitae interdum rutrum, arcu urna vulpu neque</p> 
+                                <p class="left-disc">Four offices in four cities do not stop us in reaching out even further. You don’t have to be in our time zone to fit our schedule; we’re always expanding our horizons. Drop by and say hello.</p> 
                             </div>      
                         </div>
                     </div>
