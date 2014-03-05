@@ -59,12 +59,6 @@ history.pushState('', document.title, window.location.pathname);
 					$header.attr('class', 'ha-header ' + animClassDown );
 					//$('.hero-inner').animate({ opacity : 0 });
 					$('.small-head').removeClass('small-header-show').addClass('small-header-hide');
-					/*$('#first-section').waypoint({
-					  offset: function() {
-					    console.log($(this).height() / 2);
-					  }
-					});*/
-					//$('.hero-title-holder,.btn-holder').animate({opacity:0},2000);
 					$('.icon1').css('opacity',0);
 					
 					
@@ -254,8 +248,23 @@ history.pushState('', document.title, window.location.pathname);
 					var el = $(this);
 					if(k==4){
 						el.removeClass('animate');
+					    el.removeClass('click');
 						setTimeout ( function () {
 							el.addClass('animate');
+							el.addClass('click');
+						},1);
+					}
+				});
+		});
+		$('.ca-nav-prev').bind('click.contentcarousel', function( event ) {
+				$('.team-box .team-player').each(function( k ) {
+					var el = $(this);
+					if(k==4){
+						el.removeClass('animate');
+						el.removeClass('click');
+						setTimeout ( function () {
+							el.addClass('animate');
+							el.addClass('click');
 						},1);
 					}
 				});
@@ -266,8 +275,10 @@ history.pushState('', document.title, window.location.pathname);
 					var el = $(this);
 					if(k==4){
 						el.removeClass('animate');
+						el.removeClass('click');
 						setTimeout ( function () {
 							el.addClass('animate');
+							el.addClass('click');
 						},1);
 					}
 				});
@@ -277,8 +288,10 @@ history.pushState('', document.title, window.location.pathname);
 					var el = $(this);
 					if(k==4){
 						el.removeClass('animate');
+						el.removeClass('click');
 						setTimeout ( function () {
 							el.addClass('animate');
+							el.addClass('click');
 						},1);
 					}
 				});
@@ -297,6 +310,7 @@ history.pushState('', document.title, window.location.pathname);
 					}
 					else{
 						el.addClass('animate');
+						el.addClass('click');
 					}
 					if(k==len-1){
 						$('.ca-nav').show();

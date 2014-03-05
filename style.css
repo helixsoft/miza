@@ -1250,6 +1250,116 @@ opacity: 1;
 		border: 4px solid transparent;
 	}
 }
+.team-box .team-player.animate.click{
+	animation:click 1000ms linear ;
+	-webkit-animation:click 1000ms linear;
+	-moz-animation:click 1000ms linear;
+	-o-animation:click 1000ms linear;
+}
+@-webkit-keyframes click{
+	0%{
+		transform: scale(0);
+		-webkit-transform: scale(0) ;
+		-moz-transform: scale(0);
+		-o-transform: scale(0) ;
+		-ms-transform: scale(0) ;
+		border: 4px solid #ffa000;
+	}
+	50%{
+		transform: scale(1.183);
+		-webkit-transform: scale(1.183) ;
+		-moz-transform: scale(1.183);
+		-o-transform: scale(1.183) ;
+		-ms-transform: scale(1.183) ;
+		border: 4px solid #ffa000;
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1) ;
+		-moz-transform: scale(1);
+		-o-transform: scale(1) ;
+		-ms-transform: scale(1) ;
+		border: 4px solid transparent;
+	}
+}
+@-moz-keyframes click{
+	0%{
+		transform: scale(0);
+		-webkit-transform: scale(0) ;
+		-moz-transform: scale(0);
+		-o-transform: scale(0) ;
+		-ms-transform: scale(0) ;
+		border: 4px solid #ffa000;
+	}
+	50%{
+		transform: scale(1.183);
+		-webkit-transform: scale(1.183) ;
+		-moz-transform: scale(1.183);
+		-o-transform: scale(1.183) ;
+		-ms-transform: scale(1.183) ;
+		border: 4px solid #ffa000;
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1) ;
+		-moz-transform: scale(1);
+		-o-transform: scale(1) ;
+		-ms-transform: scale(1) ;
+		border: 4px solid transparent;
+	}
+}
+@-o-keyframes click{
+	0%{
+		transform: scale(0);
+		-webkit-transform: scale(0) ;
+		-moz-transform: scale(0);
+		-o-transform: scale(0) ;
+		-ms-transform: scale(0) ;
+		border: 4px solid #ffa000;
+	}
+	50%{
+		transform: scale(1.183);
+		-webkit-transform: scale(1.183) ;
+		-moz-transform: scale(1.183);
+		-o-transform: scale(1.183) ;
+		-ms-transform: scale(1.183) ;
+		border: 4px solid #ffa000;
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1) ;
+		-moz-transform: scale(1);
+		-o-transform: scale(1) ;
+		-ms-transform: scale(1) ;
+		border: 4px solid transparent;
+	}
+}
+@keyframes click{
+	0%{
+		transform: scale(0);
+		-webkit-transform: scale(0) ;
+		-moz-transform: scale(0);
+		-o-transform: scale(0) ;
+		-ms-transform: scale(0) ;
+		border: 4px solid #ffa000;
+	}
+	50%{
+		transform: scale(1.183);
+		-webkit-transform: scale(1.183) ;
+		-moz-transform: scale(1.183);
+		-o-transform: scale(1.183) ;
+		-ms-transform: scale(1.183) ;
+		border: 4px solid #ffa000;
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1) ;
+		-moz-transform: scale(1);
+		-o-transform: scale(1) ;
+		-ms-transform: scale(1) ;
+		border: 4px solid transparent;
+	}
+}
 .team-box .team-player.animate:after{
 	animation:pop_b 1000ms linear ;
 	-webkit-animation:pop_b 1000ms linear;
