@@ -56,12 +56,9 @@ history.pushState('', document.title, window.location.pathname);
 			$this.waypoint(function(direction) {
 				
 				if( direction === 'down' && animClassDown ) {
-					$header.attr('class', 'ha-header ' + animClassDown );
-					//$('.hero-inner').animate({ opacity : 0 });
 					$('.small-head').removeClass('small-header-show').addClass('small-header-hide');
-					$('.icon1').css('opacity',0);
-					
-					
+					$header.attr('class', 'ha-header ' + animClassDown );
+					$('.icon1').css('opacity',0);	
 				}
 				else if( direction === 'up' && animClassUp ){
 					$(window).scroll(function() {
@@ -71,7 +68,6 @@ history.pushState('', document.title, window.location.pathname);
 					});
 
 					$('.small-head').removeClass('small-header-hide').addClass('small-header-show');
-					//$('.hero-title-holder,.btn-holder').animate({opacity:1},2000);
 					$('.icon1').stop(true, true).delay(300).animate({opacity:1},800);
 				}			
 			

@@ -75,9 +75,9 @@
         <section class="hero  parallax-section parallax-background" > 
             <div class="parallax-overlay parallax-overlay-1"></div>
             <div class="grid-container">  
-                <div class="hero-holder home grid-100 tablet-grid-100 mobile-grid-100 ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+                <div class="hero-holder home grid-100 tablet-grid-100 mobile-grid-100" >
                     <div class="hero-inner" >
-                        <div class="small-head small-header-small" >
+                        <div class="small-head small-header-small small-header-show ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
                             <div class="main-logo" ><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo IMAGES?>/biglogo.png" alt="logo"></a></div>
                             <div class="nav">
                                 <a id="sev-nav2" href="#service">Services</a>
