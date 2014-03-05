@@ -613,7 +613,11 @@ history.pushState('', document.title, window.location.pathname);
 									var o		= Math.min( Math.abs( factor - 1 ), 1 );
 									$rowL.css({ left 	: - val + '%' ,'opacity'			: o});
 									$rowR.css({ right 	: - val + '%' ,'opacity'			: o});
-									
+									if(o==1){
+										$rowL.find('.ss-circle').addClass('glow');
+									}else{
+										$rowL.find('.ss-circle').removeClass('glow');
+									}
 								}
 								
 							}	
