@@ -78,8 +78,8 @@ jQuery(document).ready(function(){
 
                   var position     = [$(this).attr("data-lat"),$(this).attr("data-log")];
                   var marker_url   = "<?php echo IMAGES?>/marker.png";
-                  var marker_w     = 144;
-                  var marker_h     = 184;
+                  var marker_w     = 169;
+                  var marker_h     = 206;
                   var marker_title = "Mapped WordPress Theme Demo";
                   mp_initialize_map(position, marker_url,marker_w,marker_h,marker_title);
             });
@@ -88,8 +88,8 @@ jQuery(document).ready(function(){
                
             var position     = [25.28100,51.53991];
             var marker_url   = "<?php echo IMAGES?>/marker.png";
-            var marker_w     = 144;
-            var marker_h     = 184;
+            var marker_w     = 169;
+            var marker_h     = 206;
             var marker_title = "Mapped WordPress Theme Demo";
 
             window.onload = mp_initialize_map(position, marker_url,marker_w,marker_h,marker_title);
