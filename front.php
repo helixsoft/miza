@@ -131,7 +131,7 @@ get_header(); ?>
                                             <li><span>SEM</span></li>
                                             <li><span>Data Mining</span></li>
                                         </nav>
-                                        <a href="<?php echo site_url('/lab/')?>" class="button" style="margin-top: 24px;margin-left:14px;">View LAB</a>
+                                        <a href="<?php echo site_url('/lab/')?>" class="button" style="margin-top: 14px;margin-left:14px;">View LAB</a>
                                     </div>
                                 </div>
                             </div>      
