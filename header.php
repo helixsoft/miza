@@ -59,7 +59,7 @@
 			<div class="grid-container">
                 <div class="ha-header-perspective">
                     <div class="ha-header-front">
-                        <nav id="ut-navigation" class="grid-100 tablet-grid-80 hide-on-mobile">
+                        <nav id="ut-navigation" class="grid-100 tablet-grid-100 hide-on-mobile">
                             <a href="#" class="icon1"></a>
                         </nav>
                     </div>

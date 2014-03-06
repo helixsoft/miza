@@ -92,9 +92,11 @@ history.pushState('', document.title, window.location.pathname);
 		  	var new_diff=$('.hero-title-holder').offset().top - $('#first-section').offset().top;
 		  	if(new_diff>0){
 		  		$('.hero-title-holder,.btn-holder').css('opacity',0);
+				$('.small-head').css('opacity',0);
 		  	}else{
 		  		var ratio=new_diff/diff;
 		  		$('.hero-title-holder,.btn-holder').css('opacity',ratio);
+		  		$('.small-head').css('opacity',ratio);
 		  	}
 		}
 		$('.icon').click(function(e){
