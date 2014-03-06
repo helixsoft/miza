@@ -37,10 +37,10 @@
     </head>
     <body id="mainsite">
         <a id="top"></a>
-         <video class='fullscreen fill' width="1920" height="1080" autoplay loop muted='muted'>
-                <source src="<?php echo THEMEROOT?>/video/august_video_04.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-                <source src="<?php echo THEMEROOT?>/video/august_video_04.ogv" type="video/ogg">
-                <source src="<?php echo THEMEROOT?>/video/august_video_04.webmhd.webm" type="video/webm">
+            <video class='fullscreen fill' autoplay loop muted='muted'>
+                <source src="<?php echo THEMEROOT?>/video/back.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+               
+                <source src="<?php echo THEMEROOT?>/video/back.webm" type="video/webm">
             </video>
         <header id="header-section" class="ha-header ha-header-hide">
             <div class="grid-container">
