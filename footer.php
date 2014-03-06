@@ -19,8 +19,8 @@
                               </div>
                               <div class="grid-320 tablet-grid-100 mobile-grid-100  about-box grid-parent" >
                                     <h2>Subscribe</h2>
-                                    <form>
-                                          <input  class="suscribe" type="text" placeholder="Your email here"></text>
+                                    <form id="suscribe-form" class="suscribe-form">
+                                          <input  class="suscribe" name="suscribe" type="text" placeholder="Your email here"></text>
                                     </form>
                               </div>
                               <div class="grid-420 tablet-grid-100 mobile-grid-100 about-box grid-parent" >
@@ -87,7 +87,7 @@
       </script>
       <script type="text/javascript">
       jQuery(document).ready(function(){  
-                  /* placeholder fix for older browser */
+            /* placeholder fix for older browser */
             if( !Modernizr.csstransforms3d ) {
                   $('[placeholder]').focus(function() {
                         var input = $(this);
@@ -163,6 +163,61 @@
                   return false;
                   
             });
+                  $("#suscribe-form input").keydown(function(event) {
+                     if(event.keyCode == 13){
+                         $("#suscribe-form").submit();
+                     }
+                       
+
+                  });
+                  /* form processing */
+                  $("#suscribe-form").submit(function(){
+                        
+                        $(this).find('[placeholder]').each(function() {
+                              
+                              var input = $(this);
+                              if (input.val() == input.attr('placeholder')) {
+                                    input.val('');
+                              }
+                              
+                        });
+                        
+                        var processor = "<?php echo get_template_directory_uri(); ?>/suscribe.php",
+                              str = $(this).serialize();
+                        //console.log(str);
+                        $.ajax({
+                                 
+                           type: "POST",
+                           url: processor,
+                           data: str,
+                           success: function(data) {
+                                                               
+                                    if(data === 'OK') {
+                                          $("#suscribe-form").each(function(){
+                                                this.reset();
+                                          });
+                                          $("#suscribe-form input").val('');
+                                          $("#suscribe-form input").attr('placeholder','Thanks for Subscribing');
+                                          
+                                      
+                                    } else if (data === 'ERROR') {
+                                          $("#suscribe-form input").val('');
+                                          $("#suscribe-form input").attr('placeholder','Error');
+                                    
+                                    } else {
+                                          $("#suscribe-form input").val('');
+                                          $("#suscribe-form input").attr('placeholder',data);
+                                    }
+                                 
+                           }
+                                 
+                        });
+                  
+                        return false;
+                        
+                  });
+
+             
                   $('.address-box').on("click",function(){
 
                         var position     = [$(this).attr("data-lat"),$(this).attr("data-log")];
