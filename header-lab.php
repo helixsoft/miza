@@ -67,7 +67,7 @@
             </div>
 		</header>
         <div class="clear"></div>
-        <section class="parallax-section parallax-background ha-waypoint" id="parallax-slider" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+        <section class="parallax-section parallax-background ha-waypoint labpage" id="parallax-slider" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
 			<div class="slidewrap2" data-autorotate="5000">
 				<ul class="labslider">
                     <?php 
