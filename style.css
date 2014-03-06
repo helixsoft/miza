@@ -3299,6 +3299,20 @@ line-height: 8px;
 		opacity: 1;
 	}
 }
+@media only (min-width : 320px) and (max-width : 480px) {
+	.main-logo {
+	    margin-top: 124px;
+	}
+	.hero-inner .nav {
+	    margin-top: 243px;
+	}
+	.hero-inner .nav a {
+	    margin-right: 32px;
+	}
+	.hero-title {
+	    font-size: 38px;
+	}
+}
 @media only screen and (max-width : 320px) {
 	.lab-big-title {
 		font-size:76px;
@@ -3338,5 +3352,19 @@ line-height: 8px;
 	}
 	h2.ss-hire:before {
     	display: none;
+	}
+	.main-logo{
+		margin-top: 80px;
+		float: none;
+	}
+	.hero-inner .nav{
+		float: none;
+		margin-top: 15px;
+	}
+	.hero-inner .nav a {
+    margin-right: 24px;
+	}
+	.hero-title {
+		font-size: 25px;
 	}
 }
