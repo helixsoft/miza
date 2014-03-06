@@ -37,11 +37,6 @@
     </head>
     <body id="mainsite">
         <a id="top"></a>
-            <video class='fullscreen fill' autoplay loop muted='muted'>
-                <source src="<?php echo THEMEROOT?>/video/back.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-               
-                <source src="<?php echo THEMEROOT?>/video/back.webm" type="video/webm">
-            </video>
         <header id="header-section" class="ha-header ha-header-hide">
             <div class="grid-container">
                 <div class="ha-header-perspective">
@@ -73,6 +68,7 @@
 		</header>
         <div class="clear"></div>
         <section class="hero  parallax-section parallax-background" > 
+            <a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/dSsgzORgUvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
             <div class="parallax-overlay parallax-overlay-1"></div>
             <div class="grid-container">  
                 <div class="hero-holder home grid-100 tablet-grid-100 mobile-grid-100" >

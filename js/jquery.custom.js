@@ -43,6 +43,19 @@ history.pushState('', document.title, window.location.pathname);
 				$(this).parent().parent('.address-box').toggleClass('selected');
 			}
         });
+        /* YouTube Background Video
+		================================================== */
+		/* only play video on desktop devices */
+		if( !device.tablet() && !device.mobile() ) {
+			
+			$(".player").mb_YTPlayer();
+						
+		} else {
+			/* as a fallback we add a special class to the header which displays a poster image */ 
+			$('.hero').addClass('hero-poster-image');		
+			/* hide player */
+			$(".player").hide();
+		}
 		/* Header / Navigation Animation
 		================================================== */		
 		var $header = $( '#header-section' );
