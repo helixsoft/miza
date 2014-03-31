@@ -9,32 +9,32 @@ get_header(); ?>
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent" >
                             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent">
                                 <div class="about-box">
-                                    <h3 class="big-title-1">Not Your Average Pitch<img src="<?php echo IMAGES?>/mic.png" alt="app-development"></h3>
+                                    <h3 class="big-title-1">Not Your Average Pitch<img src="<?php echo IMAGES?>/mic.png" height="61" width="61" alt="app-development"></h3>
                                 </div>
                             </div>
                             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none margin-top-17 grid-parent" >
                                 <div class="grid-40 tablet-grid-50 mobile-grid-100 about-box margin-bottom-none grid-parent nyap a">
                                     <div class="about-box">
-                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon2.png" alt="app-development" class="float-left margin-right-10"><span class="small-heading-1">Vision</span></h3>
+                                        <h3 class="small-title-text"><img src="<?php echo IMAGES?>/icon2.png" height="27" width="40" alt="app-development" class="float-left margin-right-10"><span class="small-heading-1">Vision</span></h3>
                                         <p class="small-desc-1 a">Looking ahead is the key to our performance. There is no pride in perceiving the present as our canvas. The future is our playground; it’s infinite and optimistic.</p>
                                     </div>
                                 </div>
                                 <div class="grid-40 tablet-grid-50 mobile-grid-100 about-box margin-bottom-none grid-parent nyap b">
                                     <div class="about-box">
-                                        <h3 class="small-title-text"><img  src="<?php echo IMAGES?>/icon3.png" alt="ui-design" class="float-left margin-right-10"><span class="small-heading-1">Integration</span></h3>
+                                        <h3 class="small-title-text"><img  src="<?php echo IMAGES?>/icon3.png" height="43" width="36" alt="ui-design" class="float-left margin-right-10"><span class="small-heading-1">Integration</span></h3>
                                         <p class="small-desc-1 b">Your brand values are our top priority. Whether we’re than a new road or tapping into your vision, we’ll turn it into a successful masterpiece.</p>
                                     </div>
                                 </div>
                                 <div class="grid-40 tablet-grid-50 mobile-grid-100 about-box margin-bottom-none grid-parent nyap a">
                                     
                                     <div class="about-box">
-                                        <h3 class="small-title-text a"><img src="<?php echo IMAGES?>/icon4.png" alt="brand-identity" class="float-left margin-right-10"><span class="small-heading-1">Innovation</span></h3>
+                                        <h3 class="small-title-text a"><img src="<?php echo IMAGES?>/icon4.png" height="38" width="39" alt="brand-identity" class="float-left margin-right-10"><span class="small-heading-1">Innovation</span></h3>
                                         <p class="small-desc-1 c">Innovation is our lifeline; it runs through us continuously without a moment’s hesitation. Watch us bring your brand, your ideas, and your aspirations to life.</p>
                                     </div>
                                 </div>
                                 <div class="grid-40 tablet-grid-50 mobile-grid-100 about-box margin-bottom-none grid-parent nyap b" >  
                                     <div class="about-box">
-                                        <h3 class="small-title-text a"><img src="<?php echo IMAGES?>/icon1.png" alt="consultancy" class="float-left margin-right-10"><span class="small-heading-1">Results</span></h3>
+                                        <h3 class="small-title-text a"><img src="<?php echo IMAGES?>/icon1.png" height="40" width="40" alt="consultancy" class="float-left margin-right-10"><span class="small-heading-1">Results</span></h3>
                                         <p class="small-desc-1 d">The fruits of your success are measured by the newly found reputation you’ve earned and transformed into online and offline results. It’s your time; let’s make it happen.</p>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ get_header(); ?>
                             ?>
                             <div class="ca-item">
                             <div class="team-player">
-                                <img src="<?php the_field('member_pic'); ?>">
+                                <img src="<?php the_field('member_pic'); ?>" width="169" height="169">
                                 <div class="team-name"><?php the_title();?></div>
                                 <div class="team-position"><?php the_field('member_position'); ?></div>
                                 <div class="team-fly"></div>
