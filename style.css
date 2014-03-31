@@ -459,7 +459,7 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 	background-attachment: fixed !important;
 }
 .parallax-banner-1 { background:url('images/parallax-banner-1.jpg'); background-position: center center; }
-.parallax-banner-2 { background:url('images/blog_pic.png'); background-position: center center; }
+.parallax-banner-2 { background:url('images/blog_pic.jpg'); background-position: center center; }
 .parallax-banner-3 { background:url('images/parallax-banner-3.jpg'); }
 .parallax-banner-4 { background:url('images/parallax-banner-4.jpg'); background-position:center bottom !important; }
 .parallax-banner-5 { background:url('images/parallax-banner-5.jpg'); }
