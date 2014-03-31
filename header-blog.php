@@ -42,7 +42,7 @@
                 <div class="ha-header-perspective">
                     <div class="ha-header-front">
                         <div class="grid-20 tablet-grid-20 hide-on-mobile grid-parent">
-                            <h1 class="logo"><a href="<?php echo site_url()?>"><img src="<?php echo IMAGES?>/smalllogo.png" alt="logo"></a></h1>
+                            <h1 class="logo"><a href="<?php echo site_url()?>"><img src="<?php echo IMAGES?>/smalllogo.png" alt="logo" height="55" width="44"></a></h1>
                         </div>
                         <nav id="ut-navigation" class="grid-80 tablet-grid-80 hide-on-mobile">
                             <a id="sev-nav1" href="<?php echo site_url('#service')?>">Services</a>

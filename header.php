@@ -42,7 +42,7 @@
                 <div class="ha-header-perspective">
                     <div class="ha-header-front">
                         <div class="grid-20 tablet-grid-20 hide-on-mobile grid-parent">
-                            <h1 class="logo"><a href="#top"><img src="<?php echo IMAGES?>/smalllogo.png" alt="logo"></a></h1>
+                            <h1 class="logo"><a href="#top"><img src="<?php echo IMAGES?>/smalllogo.png" alt="logo" height="55" width="44"></a></h1>
                         </div>
                         <nav id="ut-navigation" class="grid-80 tablet-grid-80 hide-on-mobile">
                             <a id="sev-nav1" href="#service">Services</a>
@@ -74,7 +74,7 @@
                 <div class="hero-holder home grid-100 tablet-grid-100 mobile-grid-100" >
                     <div class="hero-inner" >
                         <div class="small-head small-header-small small-header-show ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
-                            <div class="main-logo" ><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo IMAGES?>/biglogo.png" alt="logo"></a></div>
+                            <div class="main-logo" ><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo IMAGES?>/biglogo.png" alt="logo" height="133" width="105"></a></div>
                             <div class="nav">
                                 <a id="sev-nav2" href="#service">Services</a>
                                 <a href="<?php echo site_url('/lab/')?>">LAB</a>
