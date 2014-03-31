@@ -105,7 +105,7 @@ get_header(); ?>
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box grid-parent">
                             <div class="grid-45 tablet-grid-100 mobile-grid-100 about-box">
                                 <div class="about-box">
-                                    <h3 class="big-title-2">Bread<br/><span>And</span><img src="<?php echo IMAGES?>/icon5.png" class="margin-left-10"><br/>Butter</h3>
+                                    <h3 class="big-title-2">Bread<br/><span>And</span><img src="<?php echo IMAGES?>/icon5.png" width="62" height="63" class="margin-left-10"><br/>Butter</h3>
                                 </div>
                             </div>
                             <div class="grid-55 tablet-grid-100 mobile-grid-100 about-box grid-parent">
