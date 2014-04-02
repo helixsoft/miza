@@ -21,6 +21,7 @@
                                     <h2>Subscribe</h2>
                                     <form id="suscribe-form" class="suscribe-form">
                                           <input  class="suscribe" name="suscribe" type="text" placeholder="Your email here"></text>
+                                          <input type="submit" class="sub_submit">
                                     </form>
                               </div>
                               <div class="grid-420 tablet-grid-100 mobile-grid-100 about-box grid-parent" >

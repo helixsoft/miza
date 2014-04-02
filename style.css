@@ -1782,8 +1782,8 @@ input[type="text"].suscribe{
 	outline: none;
 	color: #FFFFFF;
 	margin: 0;
-	width:118px;
-	max-width:118px;
+	width:133px;
+	max-width:133px;
 	font-family: 'nexa_lightregular';
 	display: inline-block;
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
@@ -1796,7 +1796,7 @@ input[type="text"].suscribe{
 	background: transparent;
 	min-height:20px;
 	margin-right: 0px;
-	margin-left: 25px;
+	margin-left: 10px;
 	margin-top:10px;
 	-webkit-transition : border-bottom 500ms ease-out; 
   -moz-transition : border-bottom 500ms ease-out;
@@ -1821,6 +1821,20 @@ input[type="text"].suscribe::-moz-placeholder { /* Mozilla Firefox 19+ */
 input[type="text"].suscribe:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #FFF;
 	font-size:11px;
+}
+input[type="submit"].sub_submit{
+	width: 26px;
+	height: 19px;
+	background: url(images/sub-icon.png) -27px -0px no-repeat;
+	border:none;
+	text-indent: -99999px;
+	cursor: pointer;
+	position: relative;
+	top:0px;
+}
+
+input[type="text"].suscribe:focus + input[type="submit"].sub_submit{
+	background: url(images/sub-icon.png) 0px 0px no-repeat;
 }
 .footer-section h2{
 	color: #fff;
