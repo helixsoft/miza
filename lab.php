@@ -28,8 +28,13 @@ get_header('lab'); ?>
 						while ( $loop->have_posts() ) : $loop->the_post();
 					?>
 					<?php
-						$category = get_the_category(); 
-						$catname = $category[0]->slug;
+						$categories = get_the_category();
+						$catname='';
+						if($categories){
+							foreach ($categories as $category) {
+								$catname=$catname.$category->slug.' ';
+							}
+						} 
 					?>
 						<a class="mix <?php echo $catname;?> homepage-projects-list-container" href="<?php echo get_permalink($post->ID)?>">
 							<img class="homepage-projects-list-container-image-bw" src="<?php the_field('grayscale_image'); ?>">

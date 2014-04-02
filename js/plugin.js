@@ -153,7 +153,7 @@
 								'<li role="presentation">',
 									'<a href="#' + associated + '-slide' + slideNum +'"',
 									' aria-controls="' + associated + '-slide' + slideNum +'"',
-									' id="' + associated + '-tab' + slideNum + '" role="tab">' + hed + '</a>',
+									' id="' + associated + '-tab' + slideNum + '" role="tab">' + hed + '<div class="mask"></div>'+'</a>',
 								'</li>'
 							].join('');
 						
