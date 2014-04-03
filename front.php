@@ -4,7 +4,7 @@ Template Name: Front
 */
 get_header(); ?>
 <div class="nav-waypoint">
-                <section id="first-section" class="first-section content-section ha-waypoint">
+                <section id="first-section" class="first-section content-section ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
                     <div class="grid-container">
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent" >
                             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent">
