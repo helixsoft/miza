@@ -33,6 +33,19 @@
         <script src="<?php echo THEMEROOT?>/js/SmoothScroll.js"></script>
         <script src="<?php echo THEMEROOT?>/js/modernizr.js"></script>
         <script src="<?php echo THEMEROOT?>/js/device.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#parallax-section-2').addClass('parallax-banner-2');
+                $('.parallax-banner-2').css("background-position","0px 0px");
+                $('.parallax-banner-2').height('538');
+                $(window).resize(function() {
+                    
+                    var windowHeight = $(window).height();
+                    $('.hero').height( windowHeight );
+                    $('.parallax-banner-2').height('538')
+                });
+            });
+        </script>
         <?php wp_head();?>
     </head>
     <body id="mainsite">
@@ -68,7 +81,7 @@
 		</header>
         <div class="clear"></div>
         <section class="hero  parallax-section parallax-background" > 
-            <a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/kn-1D5z3-Cs',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+            <!--<a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/kn-1D5z3-Cs',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>-->
             <div class="parallax-overlay parallax-overlay-1"></div>
             <div class="grid-container">  
                 <div class="hero-holder home grid-100 tablet-grid-100 mobile-grid-100" >

@@ -53,11 +53,18 @@
                         var new_diff=$('.hero-title-holder').offset().top - $('#first-section').offset().top;
                         if(new_diff>0){
                               $('.hero-title-holder,.btn-holder').css('opacity',0);
-                              $('.small-head').css('top',-new_diff);
+                              $('.small-head').css('top',-300);
+                              setTimeout(function (){
+                                    $( '#header-section' ).attr('class', 'ha-header ' + 'ha-header-show' );
+                              }, 1000); 
+                              
                         }else{
                               var ratio=new_diff/diff;
                               $('.hero-title-holder,.btn-holder').css('opacity',ratio);
                               $('.small-head').css('top',0);
+                              setTimeout(function (){
+                                    $( '#header-section' ).attr('class', 'ha-header ' + 'ha-header-hide' );
+                              }, 1000); 
                         }
                   }
                   $('.logo a[href*=#]').click( function(event) { 
