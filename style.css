@@ -1782,8 +1782,8 @@ input[type="text"].suscribe{
 	outline: none;
 	color: #FFFFFF;
 	margin: 0;
-	width:107px;
-	max-width:107px;
+	width:108px;
+	max-width:108px;
 	font-family: 'nexa_lightregular';
 	display: inline-block;
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
@@ -1798,7 +1798,6 @@ input[type="text"].suscribe{
 	margin-right: 0px;
 	margin-left: 10px;
 	margin-top:10px;
-	padding-right: 28px;
 	-webkit-transition : border-bottom 500ms ease-out; 
   	-moz-transition : border-bottom 500ms ease-out;
   	-o-transition : border-bottom 500ms ease-out;  
@@ -1828,8 +1827,8 @@ input[type="submit"].sub_submit{
 	text-indent: -99999px;
 	cursor: pointer;
 	position: relative;
-	top: -36px;
-	left: 121px;
+	top: 4px;
+	left: 0px;
 }
 
 input[type="text"].suscribe:focus + input[type="submit"].sub_submit{
