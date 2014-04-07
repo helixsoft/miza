@@ -10,7 +10,12 @@ history.pushState('', document.title, window.location.pathname);
 		/* Hero height
 		================================================== */
 		var windowHeight = $(window).height();
-		
+		unloadScrollBars();
+            function unloadScrollBars() {
+                document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+                document.body.scroll = "no"; // ie only
+            }
+    
 		$('.hero').height( windowHeight );
 		$('#parallax-section-2').addClass('parallax-banner-2');
 		$('.parallax-banner-2').css("background-position","0px 0px");
@@ -28,10 +33,12 @@ history.pushState('', document.title, window.location.pathname);
 		}
 		if(hash=='#service'){
 			$.scrollTo( '#service' ,2000, { easing: 'swing' , offset: -80 , 'axis':'y' } );
+			enable_scroll();
 			//$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');	
 		}	
 		if(hash=='#address-section'){
 			$.scrollTo( '#address-section' ,2000, { easing: 'swing' , offset: -80 , 'axis':'y' } );
+			enable_scroll();
 			//$( '#header-section' ).attr('class', 'ha-header '+ 'ha-header-hide');	
 		}
 		$('.address-box .contact').on("click",function(){
@@ -113,7 +120,28 @@ history.pushState('', document.title, window.location.pathname);
 		});
 		var top=0,key=-1;
 		var time;
+		// left: 37, up: 38, right: 39, down: 40,
+                  // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+                  var keys = [37, 38, 39, 40];
+                  var scrollcount=0;
+                  function preventDefault(e) {
+                    e = e || window.event;
+                    if (e.preventDefault)
+                        e.preventDefault();
+                    e.returnValue = false;  
+                  }
+                  function wheel(e) {
+                  	preventDefault(e);
+                  }
+		function enable_scroll() {
+                      if (window.removeEventListener) {
+                          window.removeEventListener('DOMMouseScroll', wheel, false);
+                      }
+                      window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+                  }
 		$('#to-about-section').click( function(event) {
+			enable_scroll();
+			$( '#header-section' ).attr('class', 'ha-header ' + 'ha-header-show' );
 			event.preventDefault();
 			top=0;key=-1;
 			$(document).on('mousewheel DOMMouseScroll', function() {

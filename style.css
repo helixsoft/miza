@@ -188,6 +188,7 @@ img {
 -moz-box-shadow:    0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 }
+
 .ha-header-hide {
 	height: 80px;
 	-webkit-transform: translateY(-100%);
@@ -225,6 +226,12 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
   transition: all 2s;
+}
+.animateUp{
+	top:-500px;
+}
+.animateDown{
+	top:0px;
 }
 .section-header {
 	text-align:center;
@@ -1782,8 +1789,8 @@ input[type="text"].suscribe{
 	outline: none;
 	color: #FFFFFF;
 	margin: 0;
-	width:108px;
-	max-width:108px;
+	width:107px;
+	max-width:107px;
 	font-family: 'nexa_lightregular';
 	display: inline-block;
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
@@ -1798,6 +1805,7 @@ input[type="text"].suscribe{
 	margin-right: 0px;
 	margin-left: 10px;
 	margin-top:10px;
+	padding-right: 28px;
 	-webkit-transition : border-bottom 500ms ease-out; 
   	-moz-transition : border-bottom 500ms ease-out;
   	-o-transition : border-bottom 500ms ease-out;  
@@ -1827,8 +1835,8 @@ input[type="submit"].sub_submit{
 	text-indent: -99999px;
 	cursor: pointer;
 	position: relative;
-	top: 4px;
-	left: 0px;
+	top: -36px;
+	left: 121px;
 }
 
 input[type="text"].suscribe:focus + input[type="submit"].sub_submit{
@@ -3211,6 +3219,18 @@ float: right;
 }
 .labpage{
 	background: #fff;
+}
+.hero-animate-show{
+	opacity: 1;
+	-webkit-transition: opacity 2s linear;
+	-moz-transition: opacity 2s linear;
+	transition: opacity 2s linear;
+}
+.hero-animate-hide{
+	opacity: 0;
+	-webkit-transition: opacity 2s linear;
+	-moz-transition: opacity 2s linear;
+	transition: opacity 2s linear;
 }
 @media only screen and (max-width : 1024px) {
 	.excerpt-area{

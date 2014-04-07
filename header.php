@@ -95,8 +95,8 @@
                                 <a id="hire2" href="#address-section">Hire Us</a>
                             </div>
                         </div>
-                        <div class="hero-title-holder" ><h1 class="hero-title">Every Brand Has a Story<br/>Let Us Tell You Ours</h1></div>
-                        <span class="btn-holder"><a id="to-about-section" class="hero-btn"></a></span>
+                        <div class="hero-title-holder hero-animate-show" ><h1 class="hero-title">Every Brand Has a Story<br/>Let Us Tell You Ours</h1></div>
+                        <span class="btn-holder hero-animate-show"><a id="to-about-section" class="hero-btn"></a></span>
                     </div>
                 </div>                                                  
             </div>
