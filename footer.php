@@ -114,8 +114,9 @@
                       }
                       window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
                   }
-
-                  disable_scroll();
+                  if( !device.tablet() && !device.mobile() && Modernizr.csstransitions ) {
+                     disable_scroll();
+                  }
                   $(window).scroll(function() {
                         if($(this).scrollTop() == 0) { 
                               $( '#header-section' ).attr('class', 'ha-header ' + 'ha-header-hide' );
@@ -158,6 +159,36 @@
             <?php if ( 'labs' == get_post_type() ) {?>
                   jQuery(document).ready(function(){
                         $('.parallax-banner-2').css("background-position","center center");
+                        var $header = $( '#header-section' );
+      
+                     $( '.ha-waypoint' ).each( function(i) {
+                        
+                        /* needed vars */
+                        var $this = $( this ),
+                           animClassDown = $this.data( 'animateDown' ),
+                           animClassUp = $this.data( 'animateUp' );
+                        $this.waypoint(function(direction) {
+                           
+                           if( direction === 'down' && animClassDown ) {
+                              $('.small-head').removeClass('small-header-hide').addClass('small-header-show');
+                              $header.attr('class', 'ha-header ' + animClassUp );
+                             
+                              $('.icon1').css('opacity',1); 
+                           }
+                           else if( direction === 'up' && animClassUp ){
+                              $(window).scroll(function() {
+                                 if($(this).scrollTop() == 0) {  
+                                    $header.attr('class', 'ha-header ' + animClassDown ); 
+                                 } 
+                              });
+                              $('.small-head').removeClass('small-header-show').addClass('small-header-hide');
+                            
+                              $('.icon1').stop(true, true).delay(300).animate({opacity:0},800);
+                           }        
+                        
+                        }, { offset: '-1px' } );
+                        
+                     });
                   });
             <?php } ?>
       </script>

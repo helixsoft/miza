@@ -468,7 +468,7 @@ box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.27);
 .parallax-banner-1 { background:url('images/parallax-banner-1.jpg'); background-position: center center; }
 .parallax-banner-2 { background:url('images/blog_pic.jpg'); background-position: center center; }
 .parallax-banner-3 { background:url('images/parallax-banner-3.jpg'); }
-.parallax-banner-4 { background:url('images/parallax-banner-4.jpg'); background-position:center bottom !important; }
+.parallax-banner-4 { background:url('images/parallax-banner-4.jpg'); }
 .parallax-banner-5 { background:url('images/parallax-banner-5.jpg'); }
 .parallax-banner-6 { background:url('images/parallax-banner-6.jpg'); }
 .parallax-banner-7 { background:url('images/404.jpg'); }
@@ -3232,6 +3232,22 @@ float: right;
 	-moz-transition: opacity 2s linear;
 	transition: opacity 2s linear;
 }
+.lab-content p{
+	margin-bottom: 0px;
+}
+.lab-content img{
+	margin-bottom: 0px;
+	-webkit-box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.59);
+	-moz-box-shadow:    1px 3px 7px 0px rgba(0, 0, 0, 0.59);
+	box-shadow:         1px 3px 7px 0px rgba(0, 0, 0, 0.59);
+}
+hr.underline{
+	border: solid #ffa000;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 40px 0 40px;
+	height: 0;
+}
 @media only screen and (max-width : 1024px) {
 	.excerpt-area{
 		margin-left:0px;
@@ -3315,6 +3331,10 @@ float: right;
 	  -moz-transition: all 2s;
 	  transition: all 2s;
 	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
 }
 @media only screen and (max-width : 1024px) {
 	.homepage-projects-list-container{
@@ -3380,6 +3400,10 @@ float: right;
 	.small-desc-1.a{
 		margin-bottom: 0px;
 	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
 }
 @media only screen and (max-width : 768px) {
 .ss-large .ss-circle {
@@ -3402,6 +3426,10 @@ float: right;
 	.small-desc-1.a{
 		margin-bottom: 0px;
 	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
 }
 @media (min-width : 641px) and (max-width : 768px) {
 	.hero-title {
@@ -3419,6 +3447,16 @@ float: right;
 	input.contact[type="submit"] {
     	width: 25%;
     	max-width: 25%;
+	}
+	.ss-circle-1,.ss-circle-2,.ss-circle-3{
+		background-size: 50%;
+	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
+	.parallax-section-6{
+		display: none;
 	}
 }
 @media (min-width : 481px) and (max-width : 640px) {
@@ -3454,7 +3492,16 @@ float: right;
 	h2.ss-hire:before {
     	display: none;
 	}
-
+	.ss-circle-1,.ss-circle-2,.ss-circle-3{
+		background-size: 50%;
+	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
+	.parallax-section-6{
+		display: none;
+	}
 }
 @media (min-width : 361px) and (max-width : 480px) {
 	.main-logo {
@@ -3477,6 +3524,16 @@ float: right;
 	}
 	.ca-nav span {
 		left: -50px;
+	}
+	.ss-circle-1,.ss-circle-2,.ss-circle-3{
+		background-size: 30%;
+	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
+	.parallax-section-6{
+		display: none;
 	}
 }
 @media (min-width : 321px) and (max-width : 360px){
@@ -3513,6 +3570,16 @@ float: right;
 	}
 	.ca-nav span {
 		left: -50px;
+	}
+	.ss-circle-1,.ss-circle-2,.ss-circle-3{
+		background-size: 30%;
+	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
+	.parallax-section-6{
+		display: none;
 	}
 }
 @media only screen and (max-width : 320px) {
@@ -3568,5 +3635,15 @@ float: right;
 	}
 	.hero-title {
 		font-size: 25px;
+	}
+	.ss-circle-1,.ss-circle-2,.ss-circle-3{
+		background-size: 30%;
+	}
+	.labslider .labslide img{
+		min-height: 0px;
+		height: auto;
+	}
+	.parallax-section-6{
+		display: none;
 	}
 }

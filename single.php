@@ -8,9 +8,9 @@ get_header('blog-single'); ?>
 <?php while ( have_posts() ) : the_post();?>
 <style>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-	.parallax-banner-2 { background:url(<?php echo $url;?>); background-position: center center;}
+	.parallax-banner-6 { background:url(<?php echo $url;?>); background-position: center center;}
 </style>
-<section id="parallax-section-2" class="hero parallax-section parallax-background parallax-section-2 ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+<section id="parallax-section-6" class="hero parallax-section parallax-background parallax-section-6 ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
 			<div class="parallax-overlay parallax-overlay-blog"></div>
             <div class="grid-container">  
                 <div class="grid-100 tablet-grid-100 mobile-grid-100 ha-waypoint grid-parent" >

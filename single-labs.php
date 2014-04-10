@@ -8,9 +8,9 @@ get_header('lab-single');?>
 <?php while ( have_posts() ) : the_post();?>
 <style>
 	<?php $url = get_field('cover_image') ?>
-	.parallax-banner-3 { background:url(<?php echo $url;?>); background-position: center center; height: 538px !important;}
+	.parallax-banner-6 { background:url(<?php echo $url;?>); background-position: center center; height: 538px !important;}
 </style>
-<section id="parallax-section-3" class="hero parallax-section parallax-background parallax-section-3 ha-waypoint parallax-banner-3" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+<section id="parallax-section-6" class="hero parallax-section parallax-background parallax-section-6 ha-waypoint parallax-banner-6" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
             <div class="grid-container">  
                 <div class="grid-100 tablet-grid-100 mobile-grid-100 ha-waypoint grid-parent" >
                     <div class="hero-inner" >
@@ -39,7 +39,7 @@ get_header('lab-single');?>
 								</div>
 							</div>
 							<div class="grid-100 tablet-grid-100 mobile-grid-100 about-box grid-parent" >
-								<div class="grid-100  tablet-grid-100 mobile-grid-100 about-box grid-parent blog-content" >
+								<div class="grid-100  tablet-grid-100 mobile-grid-100 about-box grid-parent blog-content lab-content" >
 									<?php the_content();?>
 								</div>
 							</div>
