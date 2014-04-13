@@ -172,7 +172,14 @@
                            if( direction === 'down' && animClassDown ) {
                               $('.small-head').removeClass('small-header-hide').addClass('small-header-show');
                               $header.attr('class', 'ha-header ' + animClassUp );
-                             
+                              $(window).scroll(function() {
+                                 if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                                    $('#header-section').attr('class', 'ha-header ' + 'ha-header-show' ); 
+                                   
+                                 }else{
+                                    $('#header-section').attr('class', 'ha-header ' + 'ha-header-hide' ); 
+                                 }
+                              });
                               $('.icon1').css('opacity',1); 
                            }
                            else if( direction === 'up' && animClassUp ){
