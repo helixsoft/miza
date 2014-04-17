@@ -37,7 +37,7 @@
     </head>
     <body id="mainsite">
         <a id="top"></a>
-        <header id="header-section" class="ha-header ha-header-show">
+        <header id="header-section" class="ha-header ha-header-hide">
             <div class="grid-container">
                 <div class="ha-header-perspective">
                     <div class="ha-header-front">

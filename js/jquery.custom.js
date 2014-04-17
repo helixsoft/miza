@@ -79,13 +79,13 @@ history.pushState('', document.title, window.location.pathname);
 				
 				if( direction === 'down' && animClassDown ) {
 					$('.small-head').removeClass('small-header-show').addClass('small-header-hide');
-					$header.attr('class', 'ha-header ' + animClassUp );
+					$header.attr('class', 'ha-header ' + animClassDown );
 					$('.icon1').css('opacity',0);	
 				}
 				else if( direction === 'up' && animClassUp ){
 					$(window).scroll(function() {
 						if($(this).scrollTop() == 0) {  
-							$header.attr('class', 'ha-header ' +  animClassDown);
+							$header.attr('class', 'ha-header ' + animClassUp);
 						} 
 					});
 

@@ -67,15 +67,19 @@
             </div>
 		</header>
         <div class="clear"></div>
-        <section class="hero parallax-section parallax-background parallax-section-2" id="parallax-section-2"> 
-            <div class="grid-container">  
-                <div class="hero-holder grid-100 tablet-grid-100 mobile-grid-100 ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
-                    <div class="hero-inner" >
-                        <div class="hero-blog-title-holder" ><h1 class="hero-blog-title">Blog</h1></div>
+        <section class="parallax-section parallax-background ha-waypoint labpage" id="parallax-slider" data-animate-up="ha-header-hide" data-animate-down="ha-header-small"> 
+            <div class="cover-image">
+                <img src="<?php echo IMAGES?>/blog_pic.jpg">
+                <div class="grid-container absolute">  
+                    <div class="hero-holder grid-100 tablet-grid-100 mobile-grid-100">
+                        <div class="hero-inner" >
+                            <div class="hero-blog-title-holder" ><h1 class="hero-blog-title">Blog</h1></div>
+                        </div>
                     </div>
+                    <div class="orange-up"></div>
                 </div>
-				<div class="orange-up"></div>
             </div>
+            
         </section>
         <div class="clear"></div>
         <div id="main-content" class="wrap">

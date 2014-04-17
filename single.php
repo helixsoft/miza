@@ -7,18 +7,19 @@
 get_header('blog-single'); ?>
 <?php while ( have_posts() ) : the_post();?>
 <style>
-	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-	.parallax-banner-6 { background:url(<?php echo $url;?>); background-position: center center;}
+	<?php $url = get_field('cover_image') ?>
 </style>
-<section id="parallax-section-6" class="hero parallax-section parallax-background parallax-section-6 ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
-			<div class="parallax-overlay parallax-overlay-blog"></div>
-            <div class="grid-container">  
-                <div class="grid-100 tablet-grid-100 mobile-grid-100 ha-waypoint grid-parent" >
-                    <div class="hero-inner" >
-                        <div class="hero-blog-single-title-holder" ><h1 class="hero-blog-single-title"><a href="<?php echo site_url();?>">Blog</a></h1></div>
-                    </div>
-                </div>
-				<div class="orange-up"></div>				
+<section class="parallax-section parallax-background ha-waypoint labpage" id="parallax-slider" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+		 <div class="cover-image">
+                <img src="<?php echo $url?>">
+	            <div class="grid-container absolute">  
+	                <div class="grid-100 tablet-grid-100 mobile-grid-100 ha-waypoint grid-parent" >
+	                    <div class="hero-inner" >
+	                        <div class="hero-blog-single-title-holder" ><h1 class="hero-blog-single-title"><a href="<?php echo site_url('blog');?>">Blog</a></h1></div>
+	                    </div>
+	                </div>
+					<div class="orange-up"></div>				
+	            </div>
             </div>
         </section>
         <div class="clear"></div>

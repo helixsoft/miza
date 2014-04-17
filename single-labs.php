@@ -8,18 +8,22 @@ get_header('lab-single');?>
 <?php while ( have_posts() ) : the_post();?>
 <style>
 	<?php $url = get_field('cover_image') ?>
-	.parallax-banner-6 { background:url(<?php echo $url;?>); background-position: center center; height: 538px !important;}
+	.parallax-banner-6 { /*background:url(<?php echo $url;?>); background-position: center center;*/ height: 538px !important;}
 </style>
-<section id="parallax-section-6" class="hero parallax-section parallax-background parallax-section-6 ha-waypoint parallax-banner-6" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
-            <div class="grid-container">  
-                <div class="grid-100 tablet-grid-100 mobile-grid-100 ha-waypoint grid-parent" >
-                    <div class="hero-inner" >
-                        <div class="hero-blog-single-title-holder" ><h1 class="hero-blog-single-title"><a href="<?php echo site_url('lab');?>">Lab</a></h1></div>
-                    </div>
-                </div>
+ <section class="parallax-section parallax-background ha-waypoint labpage" id="parallax-slider" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+		<div class="cover-image">
+			<img src="<?php echo $url?>">
+			 <div class="grid-container absolute">  
+	            <div class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">
+	                <div class="hero-inner" >
+	                    <div class="hero-blog-single-title-holder" ><h1 class="hero-blog-single-title"><a href="<?php echo site_url('lab');?>">Lab</a></h1></div>
+	                </div>
+	            </div>
 				<div class="orange-lab-up"></div>				
-            </div>
-        </section>
+	        </div>
+		</div>
+       
+  </section>
         <div class="clear"></div>
         <div id="main-content" class="wrap">
 		<div class="nav-waypoint">

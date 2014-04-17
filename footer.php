@@ -159,11 +159,11 @@
             <?php if ( 'labs' == get_post_type() ) {?>
                   jQuery(document).ready(function(){
                         $('.parallax-banner-2').css("background-position","center center");
-                        var $header = $( '#header-section' );
+                        /*var $header = $( '#header-section' );
       
                      $( '.ha-waypoint' ).each( function(i) {
                         
-                        /* needed vars */
+
                         var $this = $( this ),
                            animClassDown = $this.data( 'animateDown' ),
                            animClassUp = $this.data( 'animateUp' );
@@ -195,7 +195,7 @@
                         
                         }, { offset: '-1px' } );
                         
-                     });
+                     });*/
                   });
             <?php } ?>
       </script>

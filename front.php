@@ -4,7 +4,7 @@ Template Name: Front
 */
 get_header(); ?>
 <div class="nav-waypoint">
-                <section id="first-section" class="first-section content-section ha-waypoint">
+                <section id="first-section" class="first-section content-section ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
                     <div class="grid-container">
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent" >
                             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box margin-bottom-none grid-parent">
@@ -67,13 +67,16 @@ get_header(); ?>
                </section>
             </div>
             <div class="nav-waypoint">
-                <section id="third-section" class="third-section content-section ha-waypoint" >
+                <section id="third-section" class="third-section content-section ha-waypoint yellow-bottom-border big" >
                     <div class="grid-container">
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 team-arrow-area grid-parent">
                             <div class="white-up"></div>
                         </div>
                         <div class="grid-100 tablet-grid-100 mobile-grid-100 team-box grid-parent">
-                            <div id="ca-container" class="ca-container">
+                            <div class="about-box">
+                                <h1 class="big-title-4"><span class="quote left">Innovation is not an option,</span><br/><span class="quote right">it's a prerequisite. We set the standard</span></h1>
+                            </div>
+                            <!--<div id="ca-container" class="ca-container">
                                 <div class="ca-wrapper">
                         
                                     <?php 
@@ -94,7 +97,7 @@ get_header(); ?>
                                         endwhile;
                                     ?>
                                 </div>
-                            </div>                          
+                            </div>-->                          
                         </div>
                     </div>
                 </section>
@@ -299,9 +302,9 @@ get_header(); ?>
                             <div class="address-box one" data-lat="25.28100" data-log="51.53991">
                                 <h4 class="location-name">Doha</h4>
                                 <div class="address clearfix">
-                                    <p class="clearfix"><i class="icon-home"></i><span class="text">63-64 Margaret St London, England</span></p>
-                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+44 (0)20 7636 4842</span></p>
-                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">info@stereocreative.com</span></p>
+                                    <p class="clearfix"><i class="icon-home"></i><span class="text ad">26 Tariq Bin  Ziyad St. Doha, Qatar 1332</span></p>
+                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+974.5597.5394</span></p>
+                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">doha@mizaqatar.com</span></p>
                                     <div class="contact">Contact Us</div>
                                 </div>
                                 <div class="border"></div>
@@ -309,12 +312,12 @@ get_header(); ?>
                             </div>      
                         </div>
                         <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent about-box">
-                            <div class="address-box two" data-lat="43.64480" data-log="-79.3982">
+                            <div class="address-box two" data-lat="43.6309037" data-log="-79.4749258">
                                 <h4 class="location-name">Toronto</h4>
                                 <div class="address clearfix">
-                                    <p class="clearfix"><i class="icon-home"></i><span class="text">63-64 Margaret St London, England</span></p>
-                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+44 (0)20 7636 4842</span></p>
-                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">info@stereocreative.com</span></p>
+                                    <p class="clearfix"><i class="icon-home"></i><span class="text ad">88 Palace Pier Crt. Toronto Ontario M8V4C2</span></p>
+                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+1.416.875.9040</span></p>
+                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">toronto@mizaqatar.com</span></p>
                                     <div class="contact">Contact Us</div>
                                 </div> 
                                 <div class="border"></div>
@@ -326,9 +329,9 @@ get_header(); ?>
                             <div class="address-box three"  data-lat="30.080293" data-log="31.340617">
                                 <h4 class="location-name">Cairo</h4>
                                 <div class="address clearfix">
-                                    <p class="clearfix"><i class="icon-home"></i><span class="text">63-64 Margaret St London, England</span></p>
-                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+44 (0)20 7636 4842</span></p>
-                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">info@stereocreative.com</span></p>
+                                    <p class="clearfix"><i class="icon-home"></i><span class="text ad">4 Tag El Din El Sobky Cairo, Egypt</span></p>
+                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+2.02.24183045</span></p>
+                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">cairo@mizaqatar.com</span></p>
                                     <div class="contact">Contact Us</div>
                                 </div>
                                 <div class="border"></div>
@@ -336,12 +339,12 @@ get_header(); ?>
                             </div>
                         </div>
                         <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent about-box">
-                            <div class="address-box four" data-lat="45.50678" data-log="-73.55661">
+                            <div class="address-box four" data-lat="45.5022625" data-log="-73.5733956">
                                 <h4 class="location-name">Montreal</h4>
                                 <div class="address clearfix">
-                                    <p class="clearfix"><i class="icon-home"></i><span class="text">63-64 Margaret St London, England</span></p>
-                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+44 (0)20 7636 4842</span></p>
-                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">info@stereocreative.com</span></p>
+                                    <p class="clearfix"><i class="icon-home"></i><span class="text ad">925 Boulevard de Maisonneuve Montréal, Quebec</span></p>
+                                    <p class="clearfix"><i class="icon-phone"></i><span class="text">+1 514-287-8767</span></p>
+                                    <p class="clearfix"><i class="icon-mail"></i><span class="text">montreal@mizaqatar.com</span></p>
                                     <div class="contact">Contact Us</div>
                                </div>
                                <div class="orange-arrow"></div>
