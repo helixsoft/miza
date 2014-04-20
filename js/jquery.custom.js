@@ -10,12 +10,12 @@ history.pushState('', document.title, window.location.pathname);
 		/* Hero height
 		================================================== */
 		var windowHeight = $(window).height();
-		unloadScrollBars();
+    		unloadScrollBars();
             function unloadScrollBars() {
                 document.documentElement.style.overflow = 'hidden';  // firefox, chrome
                 document.body.scroll = "no"; // ie only
             }
-    
+
 		$('.hero').height( windowHeight );
 		$('#parallax-section-2').addClass('parallax-banner-2');
 		$('.parallax-banner-2').css("background-position","0px 0px");
@@ -120,7 +120,6 @@ history.pushState('', document.title, window.location.pathname);
 			var execute_slogan = setTimeout ( show_slogan , 800 );
 			
 		});
-
 		var top=0,key=-1;
 		var time;
 		// left: 37, up: 38, right: 39, down: 40,
