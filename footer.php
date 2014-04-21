@@ -33,17 +33,7 @@
                   </section>
             </div>
       </div>
-<?php wp_footer();?>
-      <script src="<?php echo THEMEROOT?>/js/jquery.mb.YTPlayer.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/jquery.parallax.min.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/jquery.scrollTo.min.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/waypoints.min.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/jquery.easing.1.3.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/jquery.custom.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/plugin.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/jquery.mixitup.min.js"></script>
-      <script src="<?php echo THEMEROOT?>/js/jquery.contentcarousel.js"></script>
-      <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true&language=en"></script>
+      <?php wp_footer();?>
       <script type="text/javascript">
             <?php
       if ( is_page('home') ) {?>
