@@ -40,7 +40,7 @@ function Miza_assets() {
 		wp_deregister_script('jquery');
 	}
     wp_enqueue_script( 'jquery.min', get_template_directory_uri().'/js/jquery.min.js',false, '1.10.2',false);   
-    //wp_enqueue_script( 'SmoothScroll', get_template_directory_uri().'/js/SmoothScroll.js',false, '1.2.1',false);   
+    wp_enqueue_script( 'SmoothScroll', get_template_directory_uri().'/js/SmoothScroll.js',false, '1.2.1',false);   
     wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/modernizr.js',false, '2.6.2',false);   
     wp_enqueue_script( 'device', get_template_directory_uri().'/js/device.min.js',false, '0.1.57',false);   
     wp_enqueue_script( 'YTPlayer', get_template_directory_uri().'/js/jquery.mb.YTPlayer.js',false, '1.0.0',false);
